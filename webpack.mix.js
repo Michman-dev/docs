@@ -1,19 +1,26 @@
 const mix = require('laravel-mix');
 require('laravel-mix-jigsaw');
 
-mix.disableSuccessNotifications();
+mix.disableNotifications();
 mix.setPublicPath('source/assets/build');
 
-mix.js('source/_assets/js/main.js', 'js')
-    .sass('source/_assets/sass/main.scss', 'css/main.css')
+mix
+    .webpackConfig({ stats: { children: true }})
+    .js('source/_assets/js/main.js', 'js')
+    .postCss('source/_assets/css/main.pcss', 'css/main.css', [
+        require('postcss-import'),
+        require('tailwindcss/nesting'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ])
     .jigsaw({
         watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss'],
     })
     .options({
         processCssUrls: false,
-        postCss: [
-            require('tailwindcss'),
-        ],
     })
-    .sourceMaps()
     .version();
+
+if (! mix.inProduction()) {
+    mix.sourceMaps();
+}
