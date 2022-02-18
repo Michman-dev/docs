@@ -13,11 +13,12 @@ mix
         require('tailwindcss'),
         require('autoprefixer'),
     ])
-    .jigsaw({
-        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss'],
-    })
     .options({
         processCssUrls: false,
+    })
+    .jigsaw({
+        browserSync: false,
+        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.pcss'],
     })
     .version();
 

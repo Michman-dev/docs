@@ -1,15 +1,10 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-    content: [
-        'source/**/*.html',
-        'source/**/*.css',
-        'source/**/*.pcss',
-        'source/**/*.md',
-        'source/**/*.js',
-        'source/**/*.php',
-        'source/**/*.vue',
-    ],
+    content: require('fast-glob').sync([
+        'source/**/*.{blade.php,md,html,pcss,css,js}',
+        'components/**/*.php',
+    ]),
 
     theme: {
         extend: {
