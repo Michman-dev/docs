@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://my-jigsaw-docs.com',
+    'baseUrl' => 'https://michman.dev/docs',
     'production' => true,
 
     // DocSearch credentials
