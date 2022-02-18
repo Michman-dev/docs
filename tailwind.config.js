@@ -14,11 +14,50 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                green: colors.emerald,
-                yellow: colors.amber,
-                purple: colors.violet,
-
+                // Special values
+                transparent: 'transparent',
                 current: 'currentColor',
+
+                // Default colors
+                gray: colors.gray,
+                red: colors.red,
+                yellow: colors.amber,
+                green: colors.emerald,
+                blue: colors.blue,
+                indigo: colors.indigo,
+                purple: colors.violet,
+                pink: colors.pink,
+
+                // Custom colors
+                navy: {
+                    DEFAULT: '#003d7a',
+                    '900': '#0066cc',
+                    '800': '#005cb8',
+                    '700': '#0052a3',
+                    '600': '#00478f',
+                    '500': '#003d7a',
+                    '400': '#003366',
+                    '300': '#002952',
+                    '200': '#001f3d',
+                    '100': '#001429',
+                    '50': '#000a14',
+                },
+                gold: {
+                    DEFAULT: '#998100',
+                    '900': '#ffd700',
+                    '800': '#e6c200',
+                    '700': '#ccac00',
+                    '600': '#b39700',
+                    '500': '#998100',
+                    '400': '#806c00',
+                    '300': '#665600',
+                    '200': '#4d4100',
+                    '100': '#332b00',
+                },
+                code: {
+                    'text': '#A9B7C6',
+                    'bg': '#2B2B2B',
+                }
             },
             fontFamily: {
                 sans: [
@@ -57,9 +96,18 @@ module.exports = {
             '5xl': '2.625rem',
             '6xl': '10rem',
         },
+        debugScreens: {
+            position: ['bottom', 'left'],
+        },
     },
 
     plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/line-clamp'),
+        require('tailwindcss-debug-screens'),
+
         function ({addUtilities}) {
             const newUtilities = {
                 '.transition-fast': {
