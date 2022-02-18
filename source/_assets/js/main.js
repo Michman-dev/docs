@@ -1,6 +1,6 @@
 window.docsearch = require('docsearch.js');
 
-import hljs from 'highlight.js/lib/highlight';
+import hljs from 'highlight.js/lib/core';
 
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
 hljs.registerLanguage('css', require('highlight.js/lib/languages/css'));
@@ -11,7 +11,10 @@ hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown')
 hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
 hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+hljs.registerLanguage('python', require('highlight.js/lib/languages/python'));
 
-document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+    });
 });
