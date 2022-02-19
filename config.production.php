@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://michman.dev/docs',
+    'baseUrl' => 'https://docs.michman.dev',
     'production' => true,
 
     // DocSearch credentials
