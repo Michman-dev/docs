@@ -5,11 +5,18 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Getting Started {#getting-started}
+[TOC]
+
+!!!info
+    Test this feature.
+
+Test the HTML[^note1] abbreviations.
+
+# Getting Started
 
 This is a starter template for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and you’re ready to go.
 
-## Configuration {#getting-started-configuration}
+## Configuration
 
 As with all Jigsaw sites, configuration settings can be found in `config.php`; you can update the variables in that file with settings specific to your project. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
 
@@ -30,7 +37,7 @@ return [
 
 ---
 
-### Adding Content {#getting-started-adding-content}
+## Adding Content
 
 You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/docs` folder. If you change this, be sure to update the URL references in [navigation.php](/docs/navigation.php).
 
@@ -51,7 +58,7 @@ section: content
 
 ---
 
-### Adding Assets {#getting-started-adding-assets}
+## Adding Assets
 
 Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the `source/_assets/` directory, and Laravel Mix will process them when running `npm run dev` or `npm run prod`. The processed assets will be stored in `/source/assets/build/` (note there is no underscore on this second `assets` directory).
 
@@ -63,7 +70,7 @@ Files that don't require processing (such as images and fonts) can be added dire
 
 ---
 
-## Building Your Site {#getting-started-building-your-site}
+## Building Your Site
 
 Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.
 
@@ -75,3 +82,5 @@ Now that you’ve edited your configuration variables and know how to customize 
 # options: dev, staging, prod
 npm run dev
 ```
+
+[^note1]: Hyper Text Markup Language
