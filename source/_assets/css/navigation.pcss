@@ -1,11 +1,19 @@
-.nav-menu {
-    @apply -mt-12 -mx-8 bg-gray-200 mb-8 pb-4 pt-8 px-4 shadow w-auto;
+@layer components {
 
-    @screen lg {
-        @apply -mx-4 bg-transparent block border-b-0 mt-1 pl-0 pr-4 pt-0 shadow-none w-1/4;
+    .nav-menu {
+        @apply -mt-12 -mx-8 bg-gray-200 mb-8 pb-4 pt-8 px-4 shadow w-auto;
+
+        @screen lg {
+            @apply -mx-4 bg-transparent block border-b-0 mt-1 pl-0 pr-4 pt-0 shadow-none w-1/4;
+        }
+
+        .li-lvl0 {
+            @apply mb-10;
+        }
     }
-}
 
-.nav-menu__item {
-    @apply block no-underline mb-3 mt-0 text-sm;
+    .nav-menu__item {
+        @apply block no-underline mb-3 mt-0 text-sm;
+    }
+
 }
