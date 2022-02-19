@@ -1,5 +1,6 @@
 ### Jigsaw ###
 /build_*/
+!/build_production
 /node_modules/
 /vendor/
 /source/assets/build/
