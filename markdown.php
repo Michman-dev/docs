@@ -84,7 +84,8 @@ return [
     // https://commonmark.thephpleague.com/2.2/extensions/footnotes/
     'footnote' => [
         'backref_class'         => 'footnote-backref',
-        'backref_symbol'        => '↩',
+        // 'backref_symbol'        => '↩',
+        'backref_symbol'        => '↑',
         'container_add_hr'      => true,
         'container_class'       => 'footnotes',
         'ref_class'             => 'footnote-ref',
