@@ -4,6 +4,7 @@ module.exports = {
     content: require('fast-glob').sync([
         'source/**/*.{blade.php,md,html,pcss,css,js}',
         'components/**/*.php',
+        '!source/**/_tmp/*',
     ]),
 
     theme: {
