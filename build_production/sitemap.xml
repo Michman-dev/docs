@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://docs.michman.dev</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/404.html</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/CNAME</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/docs/custom-404-page</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/introduction</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/docs/navigation</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/docs/getting-started</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/docs/customizing-your-site</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/docs/algolia-docsearch</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/.nojekyll</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/accounts/your-account</loc>
-  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <lastmod>2022-02-20T17:19:07+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
