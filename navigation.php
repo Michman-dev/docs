@@ -2,15 +2,15 @@
 
 return [
     'Introduction' => [
-        'url' => 'docs/introduction',
+        'url' => 'introduction',
     ],
 
-    'Account' => [
+    'Accounts' => [
         'children' => [
-            'Security' => 'account/security',
-            'Source Control' => 'account/vcs',
-            'SSH Keys' => 'account/ssh',
-            'Billing' => 'account/billing',
+            'Your Account' => 'accounts/your-account',
+            'Source Control' => 'accounts/vcs',
+            'SSH Keys' => 'accounts/ssh',
+            'Billing' => 'accounts/billing',
         ],
     ],
 
