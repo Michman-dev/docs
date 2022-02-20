@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Michman Docs"/>
         <meta property="og:title" content="Algolia DocSearch | Michman Docs"/>
         <meta property="og:description" content="Configure Algolia DocSearch with the Jigsaw docs starter template"/>
-        <meta property="og:url" content="https://michman.dev/docs/docs/algolia-docsearch"/>
+        <meta property="og:url" content="https://docs.michman.dev/docs/algolia-docsearch"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -19,14 +19,14 @@
         
         <title>Michman Docs | Algolia DocSearch</title>
 
-        <link rel="home" href="https://michman.dev/docs">
+        <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
 
         
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=b157f5d2c545733a7f3045780b7ecce1">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=7c3acc0d2f5bfc1f1d5259562890bf44">
 
             </head>
 
@@ -83,7 +83,7 @@
             <ul class="my-0">
             <li class="pl-4 li-lvl0">
             
-        <a href="/docs/introduction"
+        <a href="/introduction"
             class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Introduction
@@ -92,22 +92,22 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/security"
+        <a href="/accounts/your-account"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
-            Security
+            Your Account
         </a>
     
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/vcs"
+        <a href="/accounts/vcs"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/ssh"
+        <a href="/accounts/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/billing"
+        <a href="/accounts/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -322,51 +322,51 @@
             <h1 id="algolia-docsearch">Algolia DocSearch<a id="algolia-docsearch" href="#algolia-docsearch" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <p>This starter template includes support for <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://community.algolia.com/docsearch/">DocSearch</a>, a documentation indexing and search tool provided by Algolia for free. To configure this tool, you’ll need to sign up with Algolia and set your API Key and index name in <code>config.php</code>. Algolia will then crawl your documentation regularly, and index all your content.</p>
 <p><a rel="noopener noreferrer" target="_blank" class="external-link" href="https://community.algolia.com/docsearch/#join-docsearch-program">Get your DocSearch credentials here.</a></p>
-<pre><code class="language-php">// config.php
-return [
-    'docsearchApiKey' =&gt; '',
-    'docsearchIndexName' =&gt; '',
-];
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">// config.php</span></span>
+<span class="line"><span style="color: #F47067">return</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchApiKey&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchIndexName&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">];</span></span>
+<span class="line"></span></code></pre>
 <p>Once the <code>docsearchApiKey</code> and <code>docsearchIndexName</code> values are set in <code>config.php</code>, the search field at the top of the page is ready to use.</p>
 <img class="block m-auto" src="/assets/img/docsearch.png" alt="Screenshot of search results" />
 <p>To help Algolia index your pages correctly, it's good practice to add a unique <code>id</code> or <code>name</code> attribute to each heading tag (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.). By doing so, a user will be taken directly to the appropriate section of the page when they click a search result.</p>
 <hr />
 <h2 id="algolia-adding-custom-styles">Adding Custom Styles<a id="adding-custom-styles" href="#adding-custom-styles" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <p>If you'd like to customize the styling of the search results, Algolia exposes custom CSS classes that you can modify:</p>
-<pre><code class="language-css">/* Main dropdown wrapper */
-.algolia-autocomplete .ds-dropdown-menu {
-  width: 500px;
-}
-
-/* Main category (eg. Getting Started) */
-.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-  color: darkgray;
-  border: 1px solid gray;
-}
-
-/* Category (eg. Downloads) */
-.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
-  color: gray;
-}
-
-/* Title (eg. Bootstrap CDN) */
-.algolia-autocomplete .algolia-docsearch-suggestion--title {
-  font-weight: bold;
-  color: black;
-}
-
-/* Description description (eg. Bootstrap currently works...) */
-.algolia-autocomplete .algolia-docsearch-suggestion--text {
-  font-size: 0.8rem;
-  color: gray;
-}
-
-/* Highlighted text */
-.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-  color: blue;
-}
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">/* Main dropdown wrapper */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.ds-dropdown-menu</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">width</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">500</span><span style="color: #F47067">px</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">/* Main category (eg. Getting Started) */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.algolia-docsearch-suggestion--category-header</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">darkgray</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">border</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">1</span><span style="color: #F47067">px</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">solid</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">gray</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">/* Category (eg. Downloads) */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.algolia-docsearch-suggestion--subcategory-column</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">gray</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">/* Title (eg. Bootstrap CDN) */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.algolia-docsearch-suggestion--title</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-weight</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">bold</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">black</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">/* Description description (eg. Bootstrap currently works...) */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.algolia-docsearch-suggestion--text</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">font-size</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">0.8</span><span style="color: #F47067">rem</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">gray</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">/* Highlighted text */</span></span>
+<span class="line"><span style="color: #6CB6FF">.algolia-autocomplete</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">.algolia-docsearch-suggestion--highlight</span><span style="color: #ADBAC7"> {</span></span>
+<span class="line"><span style="color: #ADBAC7">  </span><span style="color: #6CB6FF">color</span><span style="color: #ADBAC7">: </span><span style="color: #6CB6FF">blue</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 <hr />
 <p>For more details, visit the <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://community.algolia.com/docsearch/what-is-docsearch.html">official Algolia DocSearch documentation.</a></p>
         </div>
@@ -374,7 +374,7 @@ return [
 </section>
         </main>
 
-        <script src="/assets/build/js/main.js?id=dfd1ce6f06fa1982531a43a8288974f8"></script>
+        <script src="/assets/build/js/main.js?id=8568838475fa55b761e30b845b7bd34e"></script>
 
         <script>
     const navMenu = {

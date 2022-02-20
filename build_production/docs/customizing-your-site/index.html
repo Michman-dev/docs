@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Michman Docs"/>
         <meta property="og:title" content="Customizing Your Site | Michman Docs"/>
         <meta property="og:description" content="Customizing your Jigsaw docs site"/>
-        <meta property="og:url" content="https://michman.dev/docs/docs/customizing-your-site"/>
+        <meta property="og:url" content="https://docs.michman.dev/docs/customizing-your-site"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -19,14 +19,14 @@
         
         <title>Michman Docs | Customizing Your Site</title>
 
-        <link rel="home" href="https://michman.dev/docs">
+        <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
 
         
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=b157f5d2c545733a7f3045780b7ecce1">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=7c3acc0d2f5bfc1f1d5259562890bf44">
 
             </head>
 
@@ -83,7 +83,7 @@
             <ul class="my-0">
             <li class="pl-4 li-lvl0">
             
-        <a href="/docs/introduction"
+        <a href="/introduction"
             class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Introduction
@@ -92,22 +92,22 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/security"
+        <a href="/accounts/your-account"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
-            Security
+            Your Account
         </a>
     
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/vcs"
+        <a href="/accounts/vcs"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/ssh"
+        <a href="/accounts/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/billing"
+        <a href="/accounts/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -325,21 +325,21 @@
 <blockquote>
 <p>You can re-work the architecture of the Sass includes any way you’d like; just make sure to keep the <code>@tailwind</code> references in your final files.</p>
 </blockquote>
-<pre><code class="language-scss">// source/_assets/sass/main.scss
-
-@tailwind preflight;
-@tailwind components;
-
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-light.css';
-
-@import 'base';
-@import 'navigation';
-@import 'documentation';
-
-@tailwind utilities;
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">// source/_assets/sass/main.scss</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">@tailwind preflight;</span></span>
+<span class="line"><span style="color: #ADBAC7">@tailwind components;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">// Code syntax highlighting,</span></span>
+<span class="line"><span style="color: #768390">// powered by https://highlightjs.org</span></span>
+<span class="line"><span style="color: #F47067">@import</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;~highlight.js/styles/a11y-light.css&#39;</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F47067">@import</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;base&#39;</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #F47067">@import</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;navigation&#39;</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"><span style="color: #F47067">@import</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;documentation&#39;</span><span style="color: #ADBAC7">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #ADBAC7">@tailwind utilities;</span></span>
+<span class="line"></span></code></pre>
 <hr />
 <h2 id="customizing-typography">Typography Styles<a id="typography-styles" href="#typography-styles" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <p>Here’s a quick preview of what some of the basic type styles will look like in this starter template:</p>
@@ -361,21 +361,21 @@
 <p>The quick brown fox jumps over the lazy dog</p>
 </blockquote>
 <p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
-<pre><code class="language-php">class Foo extends bar
-{
-    public function fooBar()
-    {
-        //
-    }
-}
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">class</span><span style="color: #ADBAC7"> </span><span style="color: #F69D50">Foo</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">extends</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">bar</span></span>
+<span class="line"><span style="color: #ADBAC7">{</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #F47067">public</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">function</span><span style="color: #ADBAC7"> </span><span style="color: #DCBDFB">fooBar</span><span style="color: #ADBAC7">()</span></span>
+<span class="line"><span style="color: #ADBAC7">    {</span></span>
+<span class="line"><span style="color: #ADBAC7">        </span><span style="color: #768390">//</span></span>
+<span class="line"><span style="color: #ADBAC7">    }</span></span>
+<span class="line"><span style="color: #ADBAC7">}</span></span>
+<span class="line"></span></code></pre>
 </div>
         </div>
     </div>
 </section>
         </main>
 
-        <script src="/assets/build/js/main.js?id=dfd1ce6f06fa1982531a43a8288974f8"></script>
+        <script src="/assets/build/js/main.js?id=8568838475fa55b761e30b845b7bd34e"></script>
 
         <script>
     const navMenu = {

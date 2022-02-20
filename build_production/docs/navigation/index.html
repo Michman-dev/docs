@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Michman Docs"/>
         <meta property="og:title" content="Navigation | Michman Docs"/>
         <meta property="og:description" content="Building a navigation menu for your site"/>
-        <meta property="og:url" content="https://michman.dev/docs/docs/navigation"/>
+        <meta property="og:url" content="https://docs.michman.dev/docs/navigation"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -19,14 +19,14 @@
         
         <title>Michman Docs | Navigation</title>
 
-        <link rel="home" href="https://michman.dev/docs">
+        <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
 
         
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=b157f5d2c545733a7f3045780b7ecce1">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=7c3acc0d2f5bfc1f1d5259562890bf44">
 
             </head>
 
@@ -83,7 +83,7 @@
             <ul class="my-0">
             <li class="pl-4 li-lvl0">
             
-        <a href="/docs/introduction"
+        <a href="/introduction"
             class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Introduction
@@ -92,22 +92,22 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/security"
+        <a href="/accounts/your-account"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
-            Security
+            Your Account
         </a>
     
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/vcs"
+        <a href="/accounts/vcs"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/ssh"
+        <a href="/accounts/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/billing"
+        <a href="/accounts/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -321,34 +321,34 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1 id="navigation">Navigation<a id="navigation" href="#navigation" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <p>The navigation menu in the left-hand sidebar is defined using an array in <code>navigation.php</code>. Nested pages can be added by using the <code>children</code> associative array.</p>
-<pre><code class="language-php">&lt;?php
-// navigation.php
-
-return [
-    'Getting Started' =&gt; [
-        'url' =&gt; 'docs/getting-started',
-        'children' =&gt; [
-            'Customizing Your Site' =&gt; 'docs/customizing-your-site',
-            'Navigation' =&gt; 'docs/navigation',
-            'Algolia DocSearch' =&gt; 'docs/algolia-docsearch',
-            'Custom 404 Page' =&gt; 'docs/custom-404-page',
-        ],
-    ],
-    'Jigsaw Docs' =&gt; 'https://jigsaw.tighten.co/docs/installation',
-];
-
-// config.php
-'navigation' =&gt; require_once('navigation.php'),
-
-// blade files
-$page-&gt;navigation
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #F47067">&lt;?</span><span style="color: #6CB6FF">php</span></span>
+<span class="line"><span style="color: #768390">// navigation.php</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F47067">return</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;Getting Started&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">        </span><span style="color: #96D0FF">&#39;url&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;docs/getting-started&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">        </span><span style="color: #96D0FF">&#39;children&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">            </span><span style="color: #96D0FF">&#39;Customizing Your Site&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;docs/customizing-your-site&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">            </span><span style="color: #96D0FF">&#39;Navigation&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;docs/navigation&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">            </span><span style="color: #96D0FF">&#39;Algolia DocSearch&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;docs/algolia-docsearch&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">            </span><span style="color: #96D0FF">&#39;Custom 404 Page&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;docs/custom-404-page&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">        ],</span></span>
+<span class="line"><span style="color: #ADBAC7">    ],</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;Jigsaw Docs&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;https://jigsaw.tighten.co/docs/installation&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">];</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">// config.php</span></span>
+<span class="line"><span style="color: #96D0FF">&#39;navigation&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">require_once</span><span style="color: #ADBAC7">(</span><span style="color: #96D0FF">&#39;navigation.php&#39;</span><span style="color: #ADBAC7">),</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390">// blade files</span></span>
+<span class="line"><span style="color: #ADBAC7">$page</span><span style="color: #F47067">-&gt;</span><span style="color: #ADBAC7">navigation</span></span>
+<span class="line"></span></code></pre>
         </div>
     </div>
 </section>
         </main>
 
-        <script src="/assets/build/js/main.js?id=dfd1ce6f06fa1982531a43a8288974f8"></script>
+        <script src="/assets/build/js/main.js?id=8568838475fa55b761e30b845b7bd34e"></script>
 
         <script>
     const navMenu = {

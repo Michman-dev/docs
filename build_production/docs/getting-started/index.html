@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Michman Docs"/>
         <meta property="og:title" content="Getting Started | Michman Docs"/>
         <meta property="og:description" content="Getting started with Jigsaw&#039;s docs starter template is as easy as 1, 2, 3."/>
-        <meta property="og:url" content="https://michman.dev/docs/docs/getting-started"/>
+        <meta property="og:url" content="https://docs.michman.dev/docs/getting-started"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -19,14 +19,14 @@
         
         <title>Michman Docs | Getting Started</title>
 
-        <link rel="home" href="https://michman.dev/docs">
+        <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
 
         
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=b157f5d2c545733a7f3045780b7ecce1">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=7c3acc0d2f5bfc1f1d5259562890bf44">
 
             </head>
 
@@ -83,7 +83,7 @@
             <ul class="my-0">
             <li class="pl-4 li-lvl0">
             
-        <a href="/docs/introduction"
+        <a href="/introduction"
             class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Introduction
@@ -92,22 +92,22 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/security"
+        <a href="/accounts/your-account"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
-            Security
+            Your Account
         </a>
     
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/vcs"
+        <a href="/accounts/vcs"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/ssh"
+        <a href="/accounts/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/account/billing"
+        <a href="/accounts/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -345,17 +345,17 @@ Test this feature.</p>
 <p>This is a starter template for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and you’re ready to go.</p>
 <h2>Configuration<a id="configuration" href="#configuration" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <p>As with all Jigsaw sites, configuration settings can be found in <code>config.php</code>; you can update the variables in that file with settings specific to your project. You can also add new configuration variables there to use across your site; take a look at the <a rel="noopener noreferrer" target="_blank" class="external-link" href="http://jigsaw.tighten.co/docs/site-variables/">Jigsaw documentation</a> to learn more.</p>
-<pre><code class="language-php">// config.php
-return [
-    'baseUrl' =&gt; 'https://my-awesome-jigsaw-site.com/',
-    'production' =&gt; false,
-    'siteName' =&gt; 'My Site',
-    'siteDescription' =&gt; 'Give your documentation a boost with Jigsaw.',
-    'docsearchApiKey' =&gt; '',
-    'docsearchIndexName' =&gt; '',
-    'navigation' =&gt; require_once('navigation.php'),
-];
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">// config.php</span></span>
+<span class="line"><span style="color: #F47067">return</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;baseUrl&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;https://my-awesome-jigsaw-site.com/&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;production&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">false</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;siteName&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;My Site&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;siteDescription&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;Give your documentation a boost with Jigsaw.&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchApiKey&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchIndexName&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;navigation&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">require_once</span><span style="color: #ADBAC7">(</span><span style="color: #96D0FF">&#39;navigation.php&#39;</span><span style="color: #ADBAC7">),</span></span>
+<span class="line"><span style="color: #ADBAC7">];</span></span>
+<span class="line"></span></code></pre>
 <blockquote>
 <p>Tip: This configuration file is also where you’ll define any &quot;collections&quot; (for example, a collection of the contributors to your site, or a collection of blog posts). Check out the official <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
 </blockquote>
@@ -364,13 +364,13 @@ return [
 <p>You can write your content using a <a rel="noopener noreferrer" target="_blank" class="external-link" href="http://jigsaw.tighten.co/docs/content-other-file-types/">variety of file types</a>. By default, this starter template expects your content to be located in the <code>source/docs</code> folder. If you change this, be sure to update the URL references in <a href="/docs/navigation.php">navigation.php</a>.</p>
 <p><a href="/docs/navigation">Read more about navigation.</a></p>
 <p>The first section of each content page contains a YAML header that specifies how it should be rendered. The <code>title</code> attribute is used to dynamically generate HTML <code>title</code> and OpenGraph tags for each page. The <code>extends</code> attribute defines which parent Blade layout this content file will render with (e.g. <code>_layouts.documentation</code> will render with <code>source/_layouts/documentation.blade.php</code>), and the <code>section</code> attribute defines the Blade &quot;section&quot; that expects this content to be placed into it.</p>
-<pre><code class="language-yaml">---
-title: Navigation
-description: Building a navigation menu for your site
-extends: _layouts.documentation
-section: content
----
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #6CB6FF">---</span></span>
+<span class="line"><span style="color: #8DDB8C">title</span><span style="color: #ADBAC7">: </span><span style="color: #96D0FF">Navigation</span></span>
+<span class="line"><span style="color: #8DDB8C">description</span><span style="color: #ADBAC7">: </span><span style="color: #96D0FF">Building a navigation menu for your site</span></span>
+<span class="line"><span style="color: #8DDB8C">extends</span><span style="color: #ADBAC7">: </span><span style="color: #96D0FF">_layouts.documentation</span></span>
+<span class="line"><span style="color: #8DDB8C">section</span><span style="color: #ADBAC7">: </span><span style="color: #96D0FF">content</span></span>
+<span class="line"><span style="color: #6CB6FF">---</span></span>
+<span class="line"></span></code></pre>
 <p><a rel="noopener noreferrer" target="_blank" class="external-link" href="https://jigsaw.tighten.co/docs/content-blade/">Read more about Jigsaw layouts.</a></p>
 <hr />
 <h2>Adding Assets<a id="adding-assets" href="#adding-assets" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
@@ -381,20 +381,20 @@ section: content
 <hr />
 <h2>Building Your Site<a id="building-your-site" href="#building-your-site" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <p>Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.</p>
-<pre><code class="language-bash"># build static files with Jigsaw
-./vendor/bin/jigsaw build
-
-# compile assets with Laravel Mix
-# options: dev, staging, prod
-npm run dev
-</code></pre>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390"># build static files with Jigsaw</span></span>
+<span class="line"><span style="color: #ADBAC7">./vendor/bin/jigsaw build</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390"># compile assets with Laravel Mix</span></span>
+<span class="line"><span style="color: #768390"># options: dev, staging, prod</span></span>
+<span class="line"><span style="color: #ADBAC7">npm run dev</span></span>
+<span class="line"></span></code></pre>
 <div class="footnotes" role="doc-endnotes"><hr /><ol><li class="footnote" id="fn:note1" role="doc-endnote"><p>Hyper Text Markup Language&nbsp;<a class="footnote-backref" rev="footnote" href="#fnref:note1" role="doc-backlink">↑</a></p></li></ol></div>
         </div>
     </div>
 </section>
         </main>
 
-        <script src="/assets/build/js/main.js?id=dfd1ce6f06fa1982531a43a8288974f8"></script>
+        <script src="/assets/build/js/main.js?id=8568838475fa55b761e30b845b7bd34e"></script>
 
         <script>
     const navMenu = {

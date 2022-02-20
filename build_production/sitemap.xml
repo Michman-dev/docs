@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://michman.dev/docs</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/custom-404-page</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/404.html</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/introduction</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/CNAME</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/navigation</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/docs/custom-404-page</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/getting-started</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/introduction</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/customizing-your-site</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/docs/navigation</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/docs/algolia-docsearch</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/docs/getting-started</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/.nojekyll</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/docs/customizing-your-site</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://michman.dev/docs/account/security</loc>
-  <lastmod>2022-02-19T17:16:47+00:00</lastmod>
+  <loc>https://docs.michman.dev/docs/algolia-docsearch</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/.nojekyll</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/accounts/your-account</loc>
+  <lastmod>2022-02-20T16:28:17+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
