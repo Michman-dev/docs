@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4e646bcd848d282c86042cde284efb1",
+    "content-hash": "d113e52c6ff215c7df697160963b4fae",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -1745,6 +1745,129 @@
                 }
             ],
             "time": "2021-10-02T04:04:28+00:00"
+        },
+        {
+            "name": "spatie/commonmark-shiki-highlighter",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/commonmark-shiki-highlighter.git",
+                "reference": "63263717961350bbfe974b44312fcef9ceb182fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/commonmark-shiki-highlighter/zipball/63263717961350bbfe974b44312fcef9ceb182fa",
+                "reference": "63263717961350bbfe974b44312fcef9ceb182fa",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "^2.0",
+                "php": "^8.0",
+                "spatie/shiki-php": "^1.1.1",
+                "symfony/process": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.19",
+                "phpunit/phpunit": "^9.5",
+                "spatie/phpunit-snapshot-assertions": "^4.2.7",
+                "spatie/ray": "^1.28"
+            },
+            "type": "commonmark-extension",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\CommonMarkShikiHighlighter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Highlight code blocks with league/commonmark and Shiki",
+            "homepage": "https://github.com/spatie/commonmark-shiki-highlighter",
+            "keywords": [
+                "commonmark-shiki-highlighter",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/commonmark-shiki-highlighter/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-13T10:04:12+00:00"
+        },
+        {
+            "name": "spatie/shiki-php",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/shiki-php.git",
+                "reference": "d2229f325c8d94da72e7e52870bc9d048dc7733b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/shiki-php/zipball/d2229f325c8d94da72e7e52870bc9d048dc7733b",
+                "reference": "d2229f325c8d94da72e7e52870bc9d048dc7733b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.0",
+                "pestphp/pest": "^1.8",
+                "phpunit/phpunit": "^9.5",
+                "spatie/pest-plugin-snapshots": "^1.1",
+                "spatie/ray": "^1.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ShikiPhp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rias Van der Veken",
+                    "email": "rias@spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Highlight code using Shiki in PHP",
+            "homepage": "https://github.com/spatie/shiki-php",
+            "keywords": [
+                "shiki",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/shiki-php/tree/1.1.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-22T15:40:31+00:00"
         },
         {
             "name": "symfony/console",

@@ -1,3 +1,4 @@
+/*
 window.docsearch = require('docsearch.js');
 
 import hljs from 'highlight.js/lib/core';
@@ -18,3 +19,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         hljs.highlightBlock(block);
     });
 });
+*/

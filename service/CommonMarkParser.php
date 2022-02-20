@@ -16,6 +16,7 @@ use League\CommonMark\Extension\TableOfContents\TableOfContentsExtension;
 use Mni\FrontYAML\Markdown\MarkdownParser;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\MarkdownConverter;
+use Spatie\CommonMarkShikiHighlighter\HighlightCodeExtension;
 
 class CommonMarkParser implements MarkdownParser
 {
@@ -25,24 +26,49 @@ class CommonMarkParser implements MarkdownParser
     {
         $environment = new Environment($config);
 
+        // Required base CommonMark extension
         $environment->addExtension(new CommonMarkCoreExtension());
 
-        // $environment->addExtension(new DefaultAttributesExtension());
-        $environment->addExtension(new AttributesExtension());
-        $environment->addExtension(new AutolinkExtension());
-        $environment->addExtension(new ExternalLinkExtension());
-        $environment->addExtension(new FootnoteExtension());
-        $environment->addExtension(new FrontMatterExtension());
-        $environment->addExtension(new HeadingPermalinkExtension());
-        $environment->addExtension(new StrikethroughExtension());
-        $environment->addExtension(new TableExtension());
-        $environment->addExtension(new TableOfContentsExtension());
+        // Customization extensions
+        $environment
+            ->addExtension(new DefaultAttributesExtension())
+            ->addExtension(new AttributesExtension())
+            ->addExtension(new AutolinkExtension())
+            ->addExtension(new ExternalLinkExtension())
+            ->addExtension(new FootnoteExtension())
+            ->addExtension(new FrontMatterExtension())
+            ->addExtension(new HeadingPermalinkExtension())
+            ->addExtension(new StrikethroughExtension())
+            ->addExtension(new TableExtension())
+            ->addExtension(new TableOfContentsExtension())
+            ->addExtension(new HighlightCodeExtension('github-dark-dimmed'));
 
         $this->converter = new MarkdownConverter($environment);
     }
 
     public function parse($markdown): string
     {
-        return $this->converter->convert($markdown);
+        /*
+         * We have to undo and then redo the escaping that Jigsaw Markdown handler applies,
+         * otherwise the JS-based highlighter shiki breaks everything down the road.
+         * See TightenCo\Jigsaw\Handlers\MarkdownHandler->getEscapedMarkdownContent.
+         */
+        $markdown = strtr($markdown, [
+            "<{{'?php'}}" => '<?php',
+            "{{'@'}}" => '@',
+            '@{{' => '{{',
+            '@{!!' => '{!!',
+        ]);
+
+        $result = $this->converter->convert($markdown);
+
+        $result = strtr($result, [
+            '<?php' => "<{{'?php'}}",
+            '@' => "{{'@'}}",
+            '{{' => '@{{',
+            '{!!' => '@{!!',
+        ]);
+
+        return $result;
     }
 }
