@@ -73,7 +73,7 @@ return [
 
     // https://commonmark.thephpleague.com/2.2/extensions/external-links/
     'external_link' => [
-        'internal_hosts' => ['localhost', 'michman.dev'],
+        'internal_hosts' => ['localhost', 'docs.michman.dev'],
         'open_in_new_window' => true,
         'html_class' => 'external-link',
         'nofollow' => '',
