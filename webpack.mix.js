@@ -10,7 +10,14 @@ mix
     .postCss('source/_assets/css/main.pcss', 'css/main.css')
     .jigsaw({
         browserSync: false,
-        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.pcss'],
+        watch: [
+            'config.php',
+            'navigation.php',
+            'markdown.php',
+            'source/**/*.md',
+            'source/**/*.php',
+            'source/**/*.pcss',
+        ],
     })
     .options({
         processCssUrls: false,
