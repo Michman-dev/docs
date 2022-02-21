@@ -2,6 +2,7 @@
 
 namespace App\Service;
 
+use App\Extensions\Message\MessageExtension;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
 use League\CommonMark\Extension\Autolink\AutolinkExtension;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -31,17 +32,18 @@ class CommonMarkParser implements MarkdownParser
 
         // Customization extensions
         $environment
-            ->addExtension(new DefaultAttributesExtension())
-            ->addExtension(new AttributesExtension())
-            ->addExtension(new AutolinkExtension())
-            ->addExtension(new ExternalLinkExtension())
-            ->addExtension(new FootnoteExtension())
-            ->addExtension(new FrontMatterExtension())
-            ->addExtension(new HeadingPermalinkExtension())
-            ->addExtension(new StrikethroughExtension())
-            ->addExtension(new TableExtension())
-            ->addExtension(new TableOfContentsExtension())
-            ->addExtension(new HighlightCodeExtension('github-dark-dimmed'));
+            ->addExtension(new DefaultAttributesExtension)
+            ->addExtension(new AttributesExtension)
+            ->addExtension(new AutolinkExtension)
+            ->addExtension(new ExternalLinkExtension)
+            ->addExtension(new FootnoteExtension)
+            ->addExtension(new FrontMatterExtension)
+            ->addExtension(new HeadingPermalinkExtension)
+            ->addExtension(new StrikethroughExtension)
+            ->addExtension(new TableExtension)
+            ->addExtension(new TableOfContentsExtension)
+            ->addExtension(new HighlightCodeExtension('github-dark-dimmed'))
+            ->addExtension(new MessageExtension);
 
         $this->converter = new MarkdownConverter($environment);
     }

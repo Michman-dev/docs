@@ -93,4 +93,10 @@ return [
         'footnote_class'        => 'footnote',
         'footnote_id_prefix'    => 'fn:',
     ],
+
+    'message' => [
+        'syntax' => ':::',
+        'base_class' => 'message',
+        'style_class_prefix' => 'message-',
+    ],
 ];

@@ -23,4 +23,3 @@ $container->singleton('markdownParser', function ($c) {
  */
 
 $events->afterBuild(GenerateSitemap::class);
-
