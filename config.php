@@ -6,7 +6,7 @@ use TightenCo\Jigsaw\PageVariable;
 return [
     'production' => false,
 
-    'baseUrl' => 'http://localhost',
+    'baseUrl' => 'http://localhost:8000',
     'homepage' => 'introduction',
 
     'siteName' => 'Michman Docs',
