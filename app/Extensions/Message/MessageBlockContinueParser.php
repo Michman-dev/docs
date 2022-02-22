@@ -3,6 +3,7 @@
 namespace App\Extensions\Message;
 
 use League\CommonMark\Node\Block\AbstractBlock;
+use League\CommonMark\Node\Block\Paragraph;
 use League\CommonMark\Parser\Block\AbstractBlockContinueParser;
 use League\CommonMark\Parser\Block\BlockContinue;
 use League\CommonMark\Parser\Block\BlockContinueParserInterface;
@@ -68,14 +69,14 @@ class MessageBlockContinueParser extends AbstractBlockContinueParser implements 
         return BlockContinue::at($cursor);
     }
 
-    public function closeBlock(): void
-    {
-        $this->block->setContent($this->lines);
-    }
-
     public function parseInlines(InlineParserEngineInterface $inlineParser): void
     {
-        foreach ($this->lines as $line)
-            $inlineParser->parse($line, $this->block);
+        foreach ($this->lines as $line) {
+            $paragraph = new Paragraph;
+
+            $inlineParser->parse($line, $paragraph);
+
+            $this->block->appendChild($paragraph);
+        }
     }
 }

@@ -23,23 +23,23 @@ class MessageRendered implements NodeRendererInterface, ConfigurationAwareInterf
     {
         Message::assertInstanceOf($node);
 
-        $filling = $childRenderer->renderNodes($node->children());
+        $content = $childRenderer->renderNodes($node->children());
         $innerSeparator = $childRenderer->getInnerSeparator();
 
-        // dd('Filling: ', $filling);
+        $content = empty($content)
+            ? $innerSeparator
+            : ($innerSeparator . $content . $innerSeparator);
 
         $attrs = [
-            'class' => $this->config->get('message/base_class') . ' ' . $this->config->get('message/style_class_prefix') . $node->data->get('style'),
+            'class' =>
+                $this->config->get('message/base_class') . ' '
+                . $this->config->get('message/style_class_prefix') . $node->data->get('style'),
         ];
-
-        if ($filling === '') {
-            return new HtmlElement('div', $attrs, $innerSeparator . implode('', $node->getContent()));
-        }
 
         return new HtmlElement(
             'div',
             $attrs,
-            $innerSeparator . $filling . $innerSeparator
+            $content
         );
     }
 }
