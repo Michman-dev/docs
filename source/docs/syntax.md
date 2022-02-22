@@ -21,13 +21,36 @@ permalink: syntax
 
 ## Inline Text Styling
 
-**Bold text**, *Italic text*, ~~Strikethrough~~, `Inline Code Block`, [Inline Link](syntax), [External Link](https://google.com) 
+**Bold text**
+
+*Italic text*
+
+~~Strikethrough text~~
+
+`Inline Code Block`
+
+[Inline Link](syntax)
+
+[External Link](https://google.com)
+
+<u>Underlined text text</u>
+
+<small>Small text</small>
 
 
 
 ## Blockquote
 
 > Tip: This configuration file is also where you’ll define any "collections" (for example, a collection of the contributors to your site, or a collection of blog posts). Check out the official [Jigsaw documentation](https://jigsaw.tighten.co/docs/collections/) to learn more.
+
+
+
+## List
+
+- One
+- Two
+- Three
+  - Nested
 
 
 
