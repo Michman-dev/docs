@@ -11,7 +11,12 @@
     a.external-link:after {
         @apply ml-1;
 
-        content: "#";
+        display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+
+        font: var(--fa-font-solid);
+        content: "\f08e";
     }
 
 
