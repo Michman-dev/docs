@@ -8,6 +8,7 @@ mix
     .webpackConfig({ stats: { children: true }})
     .js('source/_assets/js/main.js', 'js')
     .postCss('source/_assets/css/main.pcss', 'css/main.css')
+    .copyDirectory('source/_assets/webfonts', 'source/assets/build/webfonts')
     .jigsaw({
         browserSync: false,
         watch: [

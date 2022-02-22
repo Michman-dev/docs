@@ -8,9 +8,17 @@
 
 
 
+    a.external-link:after {
+        @apply ml-1;
+
+        content: "#";
+    }
+
+
+
     ul.table-of-contents {
         a {
-            @apply hover:text-gold-700
+            @apply no-underline hover:underline text-gray-300 hover:text-gold-800 active:text-gold-700;
         }
 
         li a:before {
@@ -65,6 +73,23 @@
 
 
     .message {
-        @apply bg-red-500;
+        @apply my-3 md:my-6 px-6 rounded-lg flex flex-col;
+        @apply bg-gray-700 text-gray-100;
+
+        &.message-info {
+            @apply bg-navy-500 text-blue-100;
+        }
+
+        &.message-success {
+            @apply bg-green-800 text-green-100;
+        }
+
+        &.message-warning {
+            @apply bg-yellow-300 text-yellow-900;
+        }
+
+        &.message-danger {
+            @apply bg-red-700 text-red-100;
+        }
     }
 }
