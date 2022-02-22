@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Custom 404 pages with Jigsaw docs starter template">
+        <meta name="description" content="Hidden page with the syntax examples.">
 
         <meta property="og:site_name" content="Michman Docs"/>
-        <meta property="og:title" content="Custom 404 Page | Michman Docs"/>
-        <meta property="og:description" content="Custom 404 pages with Jigsaw docs starter template"/>
-        <meta property="og:url" content="https://docs.michman.dev/docs/custom-404-page"/>
+        <meta property="og:title" content="Syntax Demo | Michman Docs"/>
+        <meta property="og:description" content="Hidden page with the syntax examples."/>
+        <meta property="og:url" content="https://docs.michman.dev/docs/syntax"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Michman Docs | Custom 404 Page</title>
+        <title>Michman Docs | Syntax Demo</title>
 
         <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
@@ -261,7 +261,7 @@
             <li class="pl-4 li-lvl0">
             
         <a href="/docs/getting-started"
-            class="lvl0 lvl0-active  nav-menu__item hover:text-blue-500"
+            class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Getting Started
         </a>
@@ -298,7 +298,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/docs/custom-404-page"
-            class="lvl1  active nav-menu__item hover:text-blue-500"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Custom 404 Page
         </a>
@@ -319,24 +319,119 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1 id="custom-404-page">Custom 404 Page<a id="custom-404-page" href="#custom-404-page" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
-<p>This starter template includes a custom <strong>404 Not Found</strong> error page, located at <code>/source/404.blade.php</code>. <a href="/404">To preview the 404 page</a>, you can visit <code>/404</code> in your browser.</p>
-<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">&lt;!-- source/404.blade.php --&gt;</span></span>
-<span class="line"><span style="color: #F47067">@extends</span><span style="color: #ADBAC7">(</span><span style="color: #96D0FF">&#39;_layouts.master&#39;</span><span style="color: #ADBAC7">)</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #F47067">@section</span><span style="color: #ADBAC7">(</span><span style="color: #96D0FF">&#39;body&#39;</span><span style="color: #ADBAC7">)</span></span>
-<span class="line"><span style="color: #ADBAC7">&lt;</span><span style="color: #8DDB8C">div</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;flex flex-col items-center mt-32 text-gray-700&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">h1</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;text-6xl leading-none mb-2&quot;</span><span style="color: #ADBAC7">&gt;404&lt;/</span><span style="color: #8DDB8C">h1</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">h2</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;text-3xl&quot;</span><span style="color: #ADBAC7">&gt;Page not found&lt;/</span><span style="color: #8DDB8C">h2</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">hr</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;block w-full max-w-lg mx-auto my-8 border&quot;</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #ADBAC7">    &lt;</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">class</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;text-xl&quot;</span><span style="color: #ADBAC7">&gt;Need to update this page? See the &lt;</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">title</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;404 Page Documentation&quot;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">href</span><span style="color: #ADBAC7">=</span><span style="color: #96D0FF">&quot;/docs/404&quot;</span><span style="color: #ADBAC7">&gt; documentation here&lt;/</span><span style="color: #8DDB8C">a</span><span style="color: #ADBAC7">&gt;.&lt;/</span><span style="color: #8DDB8C">p</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"><span style="color: #ADBAC7">&lt;/</span><span style="color: #8DDB8C">div</span><span style="color: #ADBAC7">&gt;</span></span>
-<span class="line"><span style="color: #F47067">@endsection</span></span>
+            <ul class="table-of-contents">
+<li>
+<a href="#syntax-examples">Syntax Examples</a>
+</li>
+<li>
+<a href="#heading-1">Heading 1</a>
+<ul>
+<li>
+<a href="#heading-2">Heading 2</a>
+<ul>
+<li>
+<a href="#heading-3">Heading 3</a>
+<ul>
+<li>
+<a href="#heading-4">Heading 4</a>
+<ul>
+<li>
+<a href="#heading-5">Heading 5</a>
+<ul>
+<li>
+<a href="#heading-6">Heading 6</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#inline-text-styling">Inline Text Styling</a>
+</li>
+<li>
+<a href="#blockquote">Blockquote</a>
+</li>
+<li>
+<a href="#list">List</a>
+</li>
+<li>
+<a href="#styled-message-box">Styled Message Box</a>
+</li>
+<li>
+<a href="#code-box-with-highlighting">Code Box With Highlighting</a>
+</li>
+</ul>
+</li>
+</ul>
+<h1>Syntax Examples<a id="syntax-examples" href="#syntax-examples" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+<h1>Heading 1<a id="heading-1" href="#heading-1" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+<h2>Heading 2<a id="heading-2" href="#heading-2" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<h3>Heading 3<a id="heading-3" href="#heading-3" class="heading-permalink" aria-hidden="true" title="">#</a></h3>
+<h4>Heading 4<a id="heading-4" href="#heading-4" class="heading-permalink" aria-hidden="true" title="">#</a></h4>
+<h5>Heading 5<a id="heading-5" href="#heading-5" class="heading-permalink" aria-hidden="true" title="">#</a></h5>
+<h6>Heading 6<a id="heading-6" href="#heading-6" class="heading-permalink" aria-hidden="true" title="">#</a></h6>
+<h2>Inline Text Styling<a id="inline-text-styling" href="#inline-text-styling" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p><strong>Bold text</strong></p>
+<p><em>Italic text</em></p>
+<p><del>Strikethrough text</del></p>
+<p><code>Inline Code Block</code></p>
+<p><a href="syntax">Inline Link</a></p>
+<p><a rel="noopener noreferrer" target="_blank" class="external-link" href="https://google.com">External Link</a></p>
+<p><u>Underlined text text</u></p>
+<p><small>Small text</small></p>
+<h2>Blockquote<a id="blockquote" href="#blockquote" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<blockquote>
+<p>Tip: This configuration file is also where you’ll define any &quot;collections&quot; (for example, a collection of the contributors to your site, or a collection of blog posts). Check out the official <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
+</blockquote>
+<h2>List<a id="list" href="#list" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<ul>
+<li>One</li>
+<li>Two</li>
+<li>Three
+<ul>
+<li>Nested</li>
+</ul>
+</li>
+</ul>
+<h2>Styled Message Box<a id="styled-message-box" href="#styled-message-box" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<div class="message message-">
+<p>Default message box.</p>
+</div>
+<div class="message message-info">
+<p>Info message box.</p>
+</div>
+<div class="message message-success">
+<p>Success message box.</p>
+</div>
+<div class="message message-warning">
+<p>Warning message box.</p>
+</div>
+<div class="message message-danger">
+<p>Danger message box.</p>
+</div>
+<h2>Code Box With Highlighting<a id="code-box-with-highlighting" href="#code-box-with-highlighting" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390">// config.php</span></span>
+<span class="line"><span style="color: #F47067">return</span><span style="color: #ADBAC7"> [</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;baseUrl&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;https://my-awesome-jigsaw-site.com/&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;production&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #6CB6FF">false</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;siteName&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;My Site&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;siteDescription&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;Give your documentation a boost with Jigsaw.&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchApiKey&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;docsearchIndexName&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #96D0FF">&#39;&#39;</span><span style="color: #ADBAC7">,</span></span>
+<span class="line"><span style="color: #ADBAC7">    </span><span style="color: #96D0FF">&#39;navigation&#39;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">=&gt;</span><span style="color: #ADBAC7"> </span><span style="color: #F47067">require_once</span><span style="color: #ADBAC7">(</span><span style="color: #96D0FF">&#39;navigation.php&#39;</span><span style="color: #ADBAC7">),</span></span>
+<span class="line"><span style="color: #ADBAC7">];</span></span>
 <span class="line"></span></code></pre>
-<hr />
-<p>Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://jigsaw.tighten.co/docs/custom-404-page/">Jigsaw documentation about configuring a custom 404 page.</a></p>
+<pre class="shiki" style="background-color: #22272e"><code><span class="line"><span style="color: #768390"># build static files with Jigsaw</span></span>
+<span class="line"><span style="color: #ADBAC7">./vendor/bin/jigsaw build</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #768390"># compile assets with Laravel Mix</span></span>
+<span class="line"><span style="color: #768390"># options: dev, staging, prod</span></span>
+<span class="line"><span style="color: #ADBAC7">npm run dev</span></span>
+<span class="line"></span></code></pre>
         </div>
     </div>
 </section>
