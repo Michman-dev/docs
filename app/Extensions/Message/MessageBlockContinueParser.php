@@ -60,7 +60,6 @@ class MessageBlockContinueParser extends AbstractBlockContinueParser implements 
 
         if (! is_null($match)) {
             $cursor->advanceToEnd();
-            // $cursor->advanceToNextNonSpaceOrNewline();
             return BlockContinue::finished();
         }
 

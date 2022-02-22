@@ -9,7 +9,7 @@ use League\CommonMark\Util\HtmlElement;
 use League\Config\ConfigurationAwareInterface;
 use League\Config\ConfigurationInterface;
 
-class MessageRendered implements NodeRendererInterface, ConfigurationAwareInterface
+class MessageRenderer implements NodeRendererInterface, ConfigurationAwareInterface
 {
     private ConfigurationInterface $config;
 

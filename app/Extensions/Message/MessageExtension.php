@@ -22,6 +22,6 @@ class MessageExtension implements ConfigurableExtensionInterface
     {
         $environment
             ->addBlockStartParser(new MessageBlockStarterParser, 200)
-            ->addRenderer(Message::class, new MessageRendered);
+            ->addRenderer(Message::class, new MessageRenderer);
     }
 }

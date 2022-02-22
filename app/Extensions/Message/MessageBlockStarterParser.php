@@ -2,7 +2,6 @@
 
 namespace App\Extensions\Message;
 
-use Illuminate\Support\Str;
 use League\CommonMark\Parser\Block\BlockStart;
 use League\CommonMark\Parser\Block\BlockStartParserInterface;
 use League\CommonMark\Parser\Cursor;
@@ -21,9 +20,8 @@ class MessageBlockStarterParser implements BlockStartParserInterface, Configurat
 
     public function tryStart(Cursor $cursor, MarkdownParserStateInterface $parserState): ?BlockStart
     {
-        if ($cursor->isIndented()) {
+        if ($cursor->isIndented())
             return BlockStart::none();
-        }
 
         $syntax = $this->config->get('message/syntax');
 
@@ -40,7 +38,6 @@ class MessageBlockStarterParser implements BlockStartParserInterface, Configurat
         $style = empty($style) ? null : $style;
 
         $cursor->advanceToEnd();
-        // $cursor->advanceToNextNonSpaceOrNewline();
 
         return BlockStart::of(new MessageBlockContinueParser(
             $style,
