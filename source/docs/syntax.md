@@ -3,7 +3,7 @@ title: Syntax Demo
 description: Hidden page with the syntax examples.
 extends: _layouts.documentation
 section: content
-permalink: syntax
+permalink: syntax/index.html
 ---
 
 [TOC]
