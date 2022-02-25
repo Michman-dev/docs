@@ -80,7 +80,7 @@
 
 
     .message {
-        @apply my-3 md:my-6 px-6 rounded-lg flex flex-col;
+        @apply my-3 md:my-6 px-6 py-3 rounded-lg flex flex-col;
         @apply bg-gray-700 text-gray-100;
 
         &.message-info {
@@ -97,6 +97,10 @@
 
         &.message-danger {
             @apply bg-red-700 text-red-100;
+        }
+
+        p {
+            @apply my-3;
         }
     }
 }
