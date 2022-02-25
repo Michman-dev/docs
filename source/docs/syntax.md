@@ -37,6 +37,8 @@ permalink: syntax/index.html
 
 <small>Small text</small>
 
+==Word highlight==
+
 
 
 ## Blockquote
@@ -47,10 +49,13 @@ permalink: syntax/index.html
 
 ## List
 
+Here's how a list title will look like:
 - One
 - Two
 - Three
   - Nested
+
+And here's how it works with a normal paragraph of text.
 
 
 
@@ -58,6 +63,10 @@ permalink: syntax/index.html
 
 :::
 Default message box.
+
+- A list
+- Nested inside
+- A message box
 :::
 
 :::info
