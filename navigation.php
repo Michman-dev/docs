@@ -17,6 +17,7 @@ return [
     'Servers' => [
         'children' => [
             'Server Providers' => 'servers/providers',
+            'Creating Servers' => 'servers/create',
             'Server Types' => 'servers/types',
             'Git Access' => 'servers/git',
             'Python' => 'servers/python',
