@@ -5,12 +5,12 @@ return [
         'url' => 'introduction',
     ],
 
-    'Accounts' => [
+    'Account' => [
         'children' => [
-            'Your Account' => 'accounts/your-account',
-            'Source Control' => 'accounts/vcs',
-            'SSH Keys' => 'accounts/ssh',
-            'Billing' => 'accounts/billing',
+            'Your Account' => 'account/your-account',
+            'Source Control' => 'account/vcs',
+            'SSH Keys' => 'account/ssh',
+            'Billing' => 'account/billing',
         ],
     ],
 
