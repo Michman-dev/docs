@@ -43,4 +43,4 @@ try refreshing the access tokens by clicking the **Refresh Token** button on the
 
 
 
-[vsc]: https://michman.dev/account/vcs "Michman VCS Management Page"
+[vsc]: https://michman.dev/account/vcs "Michman Account VCS Management Page"
