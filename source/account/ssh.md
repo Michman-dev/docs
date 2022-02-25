@@ -13,7 +13,12 @@ section: content
 
 ## Adding SSH Keys to Your Servers
 
-Before you provision a server for the first time, you should add your SSH keys to your account. You can do this from the account page (opens new window) in the Forge dashboard.
+Before you provision a server for the first time, you should add your own SSH keys to your account.
+You can do this from your Michman Account [SSH Keys Page][ssh].
+
+[//]: # (TODO: Is this ever correct? How is our user isolation actually works?)
+During server creation Michman will add these keys to `michman` user on your server.
+This will allow you to manually SSH into your server as `michman` user.
 
 
 
@@ -28,3 +33,7 @@ If this key is ever removed for some reason,
 you'll have to manually copy the public key from your server's **Manage** page and place it in both
 `/home/michman/.ssh/authorized_keys` file and the `/root/.ssh/authorized_keys` file on your server.
 :::
+
+
+
+[ssh]: https://michman.dev/account/ssh "Michman Account SSH Keys Management Page"
