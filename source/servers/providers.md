@@ -20,3 +20,20 @@ Support for other server providers is coming soon!
 
 Drop me a message on bogdan@michman.dev and I'll speed up implementing support for your favorite VPS provider.
 :::
+
+
+
+## Connecting Server Providers
+
+You can connect your server provider account from your account's [Server Providers Page][providers].
+You may add a descriptive name in case you have multiple server providers accounts.
+
+
+
+### DigitalOcean API Access
+
+To link Michman to your DigitalOcean account go to your [DigitalOcean API Panel](https://cloud.digitalocean.com/settings/api/tokens)
+to create a new API token. Copy-paste that token into your Michman Account on [Server Providers Page][providers].
+
+
+[providers]: https://michman.dev "Michman Account Server Providers Page"
