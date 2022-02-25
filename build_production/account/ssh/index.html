@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Learn how to deploy your Django project with Michman.">
+        <meta name="description" content="Manage your SSH access keys.">
 
         <meta property="og:site_name" content="Michman Docs"/>
-        <meta property="og:title" content="Introduction | Michman Docs"/>
-        <meta property="og:description" content="Learn how to deploy your Django project with Michman."/>
-        <meta property="og:url" content="https://docs.michman.dev/docs/introduction"/>
+        <meta property="og:title" content="SSH Keys | Michman Docs"/>
+        <meta property="og:description" content="Manage your SSH access keys."/>
+        <meta property="og:url" content="https://docs.michman.dev/account/ssh"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Michman Docs | Introduction</title>
+        <title>Michman Docs | SSH Keys</title>
 
         <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
@@ -84,7 +84,7 @@
             <li class="pl-4 li-lvl0">
             
         <a href="/introduction"
-            class="lvl0  active nav-menu__item hover:text-blue-500"
+            class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Introduction
         </a>
@@ -117,7 +117,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/account/ssh"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+            class="lvl1  active nav-menu__item hover:text-blue-500"
         >
             SSH Keys
         </a>
@@ -328,8 +328,29 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Introducing!<a id="introducing" href="#introducing" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
-<p>_</p>
+            <h1>SSH Keys<a id="ssh-keys" href="#ssh-keys" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+<ul class="table-of-contents">
+<li>
+<a href="#adding-ssh-keys-to-your-servers">Adding SSH Keys to Your Servers</a>
+</li>
+<li>
+<a href="#michman-access-key">Michman Access Key</a>
+</li>
+</ul>
+<h2>Adding SSH Keys to Your Servers<a id="adding-ssh-keys-to-your-servers" href="#adding-ssh-keys-to-your-servers" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Before you provision a server for the first time, you should add your own SSH keys to your account.
+You can do this from your Michman Account <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/ssh" title="Michman Account SSH Keys Management Page">SSH Keys Page</a>.</p>
+<p>During server creation Michman will add these keys to <code>michman</code> user on your server.
+This will allow you to manually SSH into your server as <code>michman</code> user.</p>
+<h2>Michman Access Key<a id="michman-access-key" href="#michman-access-key" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>During the server creation process Michman will generate its own keypair so that it may access the server.
+It will add the public key from this keypair to the <code>authorized_keys</code> file of both the <code>root</code> and <code>michman</code> users.
+Please make sure not to remove to this key, otherwise Michman won't be able to manage your server.</p>
+<div class="message message-">
+<p>If this key is ever removed for some reason,
+you'll have to manually copy the public key from your server's <strong>Manage</strong> page and place it in both
+<code>/home/michman/.ssh/authorized_keys</code> file and the <code>/root/.ssh/authorized_keys</code> file on your server.</p>
+</div>
         </div>
     </div>
 </section>

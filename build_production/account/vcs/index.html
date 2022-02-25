@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Manage your Michman account.">
+        <meta name="description" content="Manage your VCS providers.">
 
         <meta property="og:site_name" content="Michman Docs"/>
-        <meta property="og:title" content="Your Account | Michman Docs"/>
-        <meta property="og:description" content="Manage your Michman account."/>
-        <meta property="og:url" content="https://docs.michman.dev/accounts/your-account"/>
+        <meta property="og:title" content="Source Control | Michman Docs"/>
+        <meta property="og:description" content="Manage your VCS providers."/>
+        <meta property="og:url" content="https://docs.michman.dev/account/vcs"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Michman Docs | Your Account</title>
+        <title>Michman Docs | Source Control</title>
 
         <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
@@ -92,14 +92,14 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/your-account"
-            class="lvl1  active nav-menu__item hover:text-blue-500"
+        <a href="/account/your-account"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Your Account
         </a>
@@ -107,8 +107,8 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/vcs"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+        <a href="/account/vcs"
+            class="lvl1  active nav-menu__item hover:text-blue-500"
         >
             Source Control
         </a>
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/ssh"
+        <a href="/account/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/billing"
+        <a href="/account/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -146,6 +146,15 @@
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Server Providers
+        </a>
+    
+    </li>
+            <li class="pl-4 li-lvl1">
+            
+        <a href="/servers/create"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Creating Servers
         </a>
     
     </li>
@@ -319,22 +328,44 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Your Account<a id="your-account" href="#your-account" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
-<h2>Two-Factor Authentication<a id="two-factor-authentication" href="#two-factor-authentication" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>You can set up Two-Factor Authentication (2FA) from your account Michman <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/profile">Account Settings Page</a>.
-Once you enable 2FA - scan the QR code with your phone's 2FA app.</p>
-<div class="message message-tip">
-<p>Offline phone application for generating 2FA codes - Google Authenticator:</p>
-<ul>
+            <h1>Source Control (VCS)<a id="source-control-vcs" href="#source-control-vcs" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+<ul class="table-of-contents">
 <li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://apps.apple.com/app/google-authenticator/id388497605">iPhone/iPad</a>
+<a href="#supported-providers">Supported Providers</a>
 </li>
 <li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Android</a>
+<a href="#connecting-accounts">Connecting Accounts</a>
+</li>
+<li>
+<a href="#disconnecting-accounts">Disconnecting Accounts</a>
+</li>
+<li>
+<a href="#refreshing-tokens">Refreshing tokens</a>
 </li>
 </ul>
+<h2>Supported Providers<a id="supported-providers" href="#supported-providers" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Michman currently supports these VCS providers:</p>
+<ul>
+<li>
+<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://github.com">GitHub</a>
+</li>
+<li>
+<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://gitlab.com">GitLab</a>
+</li>
+<li>
+<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://bitbucket.com">Bitbucket</a>
+</li>
+</ul>
+<h2>Connecting Accounts<a id="connecting-accounts" href="#connecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>You can connect to any of the supported source control providers at any time through your account's <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
+<h2>Disconnecting Accounts<a id="disconnecting-accounts" href="#disconnecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>You may remove a connected source control provider by clicking the Unlink button next to a provider.</p>
+<div class="message message-warning">
+<p>If you unlink a VCS account you will not be able to deploy projects from this account. Existing deployment won't be affected.</p>
 </div>
-<h2>Password Changing<a id="password-changing" href="#password-changing" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<h2>Refreshing tokens<a id="refreshing-tokens" href="#refreshing-tokens" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>If you have any issues working with your connected VCS providers -
+try refreshing the access tokens by clicking the <strong>Refresh Token</strong> button on the <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
         </div>
     </div>
 </section>

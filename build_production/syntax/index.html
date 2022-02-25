@@ -92,13 +92,13 @@
     </li>
             <li class="pl-4 li-lvl0">
             
-        <p class="nav-menu__item text-gray-400 lvl0">Accounts</p>
+        <p class="nav-menu__item text-gray-400 lvl0">Account</p>
     
             
         <ul class="my-0">
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/your-account"
+        <a href="/account/your-account"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Your Account
@@ -107,7 +107,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/vcs"
+        <a href="/account/vcs"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
@@ -116,7 +116,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/ssh"
+        <a href="/account/ssh"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             SSH Keys
@@ -125,7 +125,7 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/accounts/billing"
+        <a href="/account/billing"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Billing
@@ -146,6 +146,15 @@
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Server Providers
+        </a>
+    
+    </li>
+            <li class="pl-4 li-lvl1">
+            
+        <a href="/servers/create"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Creating Servers
         </a>
     
     </li>
@@ -321,12 +330,6 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <ul class="table-of-contents">
 <li>
-<a href="#syntax-examples">Syntax Examples</a>
-</li>
-<li>
-<a href="#heading-1">Heading 1</a>
-<ul>
-<li>
 <a href="#heading-2">Heading 2</a>
 <ul>
 <li>
@@ -365,8 +368,6 @@
 <a href="#code-box-with-highlighting">Code Box With Highlighting</a>
 </li>
 </ul>
-</li>
-</ul>
 <h1>Syntax Examples<a id="syntax-examples" href="#syntax-examples" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <h1>Heading 1<a id="heading-1" href="#heading-1" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <h2>Heading 2<a id="heading-2" href="#heading-2" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
@@ -383,11 +384,13 @@
 <p><a rel="noopener noreferrer" target="_blank" class="external-link" href="https://google.com">External Link</a></p>
 <p><u>Underlined text text</u></p>
 <p><small>Small text</small></p>
+<p>==Word highlight==</p>
 <h2>Blockquote<a id="blockquote" href="#blockquote" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <blockquote>
 <p>Tip: This configuration file is also where you’ll define any &quot;collections&quot; (for example, a collection of the contributors to your site, or a collection of blog posts). Check out the official <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
 </blockquote>
 <h2>List<a id="list" href="#list" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Here's how a list title will look like:</p>
 <ul>
 <li>One</li>
 <li>Two</li>
@@ -397,9 +400,15 @@
 </ul>
 </li>
 </ul>
+<p>And here's how it works with a normal paragraph of text.</p>
 <h2>Styled Message Box<a id="styled-message-box" href="#styled-message-box" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
 <div class="message message-">
 <p>Default message box.</p>
+<ul>
+<li>A list</li>
+<li>Nested inside</li>
+<li>A message box</li>
+</ul>
 </div>
 <div class="message message-info">
 <p>Info message box.</p>
