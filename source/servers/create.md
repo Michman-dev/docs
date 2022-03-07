@@ -32,7 +32,7 @@ More server types and software options are coming soon:
 - Worker Servers
 - ...and more!
 
-Drop me a note on bogdan@michman.dev if you have some specific need,
+Drop me a note on [bogdan@michman.dev](mailto:bogdan@michman.dev) if you have some specific need,
 I'm happy to help with your project!
 :::
 
