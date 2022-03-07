@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Manage your VCS providers.">
+        <meta name="description" content="Manage daemons on your servers.">
 
         <meta property="og:site_name" content="Michman Docs"/>
-        <meta property="og:title" content="Source Control | Michman Docs"/>
-        <meta property="og:description" content="Manage your VCS providers."/>
-        <meta property="og:url" content="https://docs.michman.dev/account/vcs"/>
+        <meta property="og:title" content="Daemons | Michman Docs"/>
+        <meta property="og:description" content="Manage daemons on your servers."/>
+        <meta property="og:url" content="https://docs.michman.dev/servers/daemons"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Michman Docs | Source Control</title>
+        <title>Michman Docs | Daemons</title>
 
         <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
@@ -108,7 +108,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/account/vcs"
-            class="lvl1  active nav-menu__item hover:text-blue-500"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
         </a>
@@ -179,7 +179,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/servers/daemons"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+            class="lvl1  active nav-menu__item hover:text-blue-500"
         >
             Daemons
         </a>
@@ -301,44 +301,33 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Source Control (VCS)<a id="source-control-vcs" href="#source-control-vcs" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+            <h1>Daemons<a id="daemons" href="#daemons" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <ul class="table-of-contents">
 <li>
-<a href="#supported-providers">Supported Providers</a>
+<a href="#overview">Overview</a>
 </li>
 <li>
-<a href="#connecting-accounts">Connecting Accounts</a>
-</li>
-<li>
-<a href="#disconnecting-accounts">Disconnecting Accounts</a>
-</li>
-<li>
-<a href="#refreshing-tokens">Refreshing tokens</a>
+<a href="#creating-daemons">Creating Daemons</a>
 </li>
 </ul>
-<h2>Supported Providers<a id="supported-providers" href="#supported-providers" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>Michman currently supports these VCS providers:</p>
-<ul>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://github.com">GitHub</a>
-</li>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://gitlab.com">GitLab</a>
-</li>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://bitbucket.com">Bitbucket</a>
-</li>
-</ul>
-<h2>Connecting Accounts<a id="connecting-accounts" href="#connecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>You can connect to any of the supported source control providers at any time through your account's <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
-<h2>Disconnecting Accounts<a id="disconnecting-accounts" href="#disconnecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>You may remove a connected source control provider by clicking the Unlink button next to a provider.</p>
-<div class="message message-warning">
-<p>If you unlink a VCS account you will not be able to deploy projects from this account. Existing deployment won't be affected.</p>
+<h2>Overview<a id="overview" href="#overview" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Daemons are long-running scripts and processes you wish to keep alive on your server.
+Michman uses <a rel="noopener noreferrer" target="_blank" class="external-link" href="http://supervisord.org" title="Supervisor Documentation">Supervisor</a> to manage daemons on your servers.
+If the process stops executing, Supervisor will automatically restart the process.
+Supervisor is designed to be easy to use, and you don't have to even read its docs.</p>
+<div class="message message-info">
+<p>While you can use Daemons feature to manage your Django queues,
+Michman has a dedicated feature specifically for that - <a href="/projects/queues" title="Michman Docs Project Queues">Queues</a>.</p>
 </div>
-<h2>Refreshing tokens<a id="refreshing-tokens" href="#refreshing-tokens" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>If you have any issues working with your connected VCS providers -
-try refreshing the access tokens by clicking the <strong>Refresh Token</strong> button on the <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
+<h2>Creating Daemons<a id="creating-daemons" href="#creating-daemons" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Go to your server's <strong>Daemons</strong> page to create and manage daemons.</p>
+<p>To create a new daemon Michman will need:</p>
+<p><strong>Command</strong> - The command that should be run by the daemon</p>
+<p><strong>User</strong> - Linux user on your server that will run the daemon. By default <code>michman</code> user is used.</p>
+<p><strong>Directory</strong> - The directory in which to run your command from. Leave empty to use the user's home directory.</p>
+<p><strong>Processes</strong> - Supervisor can maintain multiple instances of your process. 1 by default.</p>
+<p><strong>Start seconds</strong> - Supervisor will ensure your process is running for at least this number of seconds before considering it healthy.
+Default 1 should be fine for most processes.</p>
         </div>
     </div>
 </section>

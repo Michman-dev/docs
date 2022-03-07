@@ -160,46 +160,10 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/servers/types"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Server Types
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/git"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Git Access
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
         <a href="/servers/python"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Python
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/nginx"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Nginx Configuration
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/security"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Security
         </a>
     
     </li>
@@ -253,6 +217,15 @@
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Queues
+        </a>
+    
+    </li>
+            <li class="pl-4 li-lvl1">
+            
+        <a href="/projects/nginx"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Nginx Configuration
         </a>
     
     </li>
@@ -331,16 +304,73 @@
             <h1>Creating Servers<a id="creating-servers" href="#creating-servers" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <ul class="table-of-contents">
 <li>
+<a href="#overview">Overview</a>
+</li>
+<li>
 <a href="#server-types">Server Types</a>
+<ul>
+<li>
+<a href="#app-servers">App Servers</a>
+</li>
+<li>
+<a href="#web-servers">Web Servers</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#region-and-size">Region and Size</a>
 </li>
 </ul>
+<h2>Overview<a id="overview" href="#overview" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>To create a server go to the Michman's <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/servers" title="Michman Server Dashboard">Server Dashboard</a> (you need to be logged in).
+But first you need to link Michman to your account on a supported <a href="/servers/providers" title="Michman Docs Server Providers">server provider</a>.</p>
 <h2>Server Types<a id="server-types" href="#server-types" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>...</p>
+<p>Michman can create and manage several types of servers for you:</p>
+<ul>
+<li>App Servers</li>
+<li>Web Servers</li>
+</ul>
+<div class="message message-info">
+<p>More server types and software options are coming soon:</p>
+<ul>
+<li>Load Balancers</li>
+<li>Database Servers</li>
+<li>Cache Servers</li>
+<li>Worker Servers</li>
+<li>...and more!</li>
+</ul>
+<p>Drop me a note on <a href="mailto:bogdan@michman.dev">bogdan@michman.dev</a> if you have some specific need,
+I'm happy to help with your project!</p>
+</div>
+<h3>App Servers<a id="app-servers" href="#app-servers" class="heading-permalink" aria-hidden="true" title="">#</a></h3>
+<p>Application servers are configured to include everything you need to deploy a typical Python/Django application
+within a single server. They are provisioned with the following software:</p>
+<ul>
+<li>Python</li>
+<li>Nginx</li>
+<li>Gunicorn</li>
+<li>MySQL</li>
+<li>Redis</li>
+<li>Supervisor</li>
+<li>Uncomplicated Firewall (UFW)</li>
+</ul>
+<p>Application servers are the most typical type of server provisioned and managed by Michman.
+If you're unsure which server type you need, most likely you should choose an application server.</p>
+<h3>Web Servers<a id="web-servers" href="#web-servers" class="heading-permalink" aria-hidden="true" title="">#</a></h3>
+<p>Web servers contain the web server software you need to deploy a typical Python/Django application,
+but they do not contain a database or cache.
+These servers are meant to be networked to other dedicated database and cache servers or to managed database services.
+Web servers are provisioned with the following software:</p>
+<ul>
+<li>Python</li>
+<li>Nginx</li>
+<li>Gunicorn</li>
+<li>Supervisor</li>
+<li>Uncomplicated Firewall (UFW)</li>
+</ul>
 <h2>Region and Size<a id="region-and-size" href="#region-and-size" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>...</p>
+<p>When you start creating your server, Michman will pull up a list of server sizes and regions available specifically
+for your account on your chosen server provider.</p>
         </div>
     </div>
 </section>

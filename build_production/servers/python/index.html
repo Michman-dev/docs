@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Manage your VCS providers.">
+        <meta name="description" content="Manage Python installation on your servers.">
 
         <meta property="og:site_name" content="Michman Docs"/>
-        <meta property="og:title" content="Source Control | Michman Docs"/>
-        <meta property="og:description" content="Manage your VCS providers."/>
-        <meta property="og:url" content="https://docs.michman.dev/account/vcs"/>
+        <meta property="og:title" content="Python | Michman Docs"/>
+        <meta property="og:description" content="Manage Python installation on your servers."/>
+        <meta property="og:url" content="https://docs.michman.dev/servers/python"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Michman Docs | Source Control</title>
+        <title>Michman Docs | Python</title>
 
         <link rel="home" href="https://docs.michman.dev">
         <link rel="icon" href="/favicon.ico">
@@ -108,7 +108,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/account/vcs"
-            class="lvl1  active nav-menu__item hover:text-blue-500"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Source Control
         </a>
@@ -161,7 +161,7 @@
             <li class="pl-4 li-lvl1">
             
         <a href="/servers/python"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+            class="lvl1  active nav-menu__item hover:text-blue-500"
         >
             Python
         </a>
@@ -301,44 +301,29 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Source Control (VCS)<a id="source-control-vcs" href="#source-control-vcs" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+            <h1>Python<a id="python" href="#python" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
 <ul class="table-of-contents">
 <li>
-<a href="#supported-providers">Supported Providers</a>
+<a href="#overview">Overview</a>
 </li>
 <li>
-<a href="#connecting-accounts">Connecting Accounts</a>
+<a href="#multiple-python-versions">Multiple Python Versions</a>
 </li>
 <li>
-<a href="#disconnecting-accounts">Disconnecting Accounts</a>
-</li>
-<li>
-<a href="#refreshing-tokens">Refreshing tokens</a>
+<a href="#updating-python-between-patch-releases">Updating Python Between Patch Releases</a>
 </li>
 </ul>
-<h2>Supported Providers<a id="supported-providers" href="#supported-providers" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>Michman currently supports these VCS providers:</p>
-<ul>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://github.com">GitHub</a>
-</li>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://gitlab.com">GitLab</a>
-</li>
-<li>
-<a rel="noopener noreferrer" target="_blank" class="external-link" href="https://bitbucket.com">Bitbucket</a>
-</li>
-</ul>
-<h2>Connecting Accounts<a id="connecting-accounts" href="#connecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>You can connect to any of the supported source control providers at any time through your account's <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
-<h2>Disconnecting Accounts<a id="disconnecting-accounts" href="#disconnecting-accounts" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>You may remove a connected source control provider by clicking the Unlink button next to a provider.</p>
-<div class="message message-warning">
-<p>If you unlink a VCS account you will not be able to deploy projects from this account. Existing deployment won't be affected.</p>
-</div>
-<h2>Refreshing tokens<a id="refreshing-tokens" href="#refreshing-tokens" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
-<p>If you have any issues working with your connected VCS providers -
-try refreshing the access tokens by clicking the <strong>Refresh Token</strong> button on the <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://michman.dev/account/vcs" title="Michman Account VCS Management Page">Source Control Page</a>.</p>
+<h2>Overview<a id="overview" href="#overview" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Michman can install and configure multiple versions of Pythons on your servers.
+Currently supported major versions are 2.7, 3.7, 3.8, 3.9 and 3.10.</p>
+<h2>Multiple Python Versions<a id="multiple-python-versions" href="#multiple-python-versions" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>When provisioning a new server you'll choose a Python version that will be installed and used by default.</p>
+<p>Once the server is created you can install more versions from your server's management page.
+All installed versions will be available to use when creating a new project or switching versions for an existing one.</p>
+<p>You can uninstall a version of Python as long as it is not in use by any projects on that server and it isn't the last one installed.</p>
+<h2>Updating Python Between Patch Releases<a id="updating-python-between-patch-releases" href="#updating-python-between-patch-releases" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>You can upgrade your Python installations between patch releases at any time using the <strong>Update Patch Version</strong> button.
+Typically, these updates should not cause any breaking changes to your server. Some seconds of downtime are possible.</p>
         </div>
     </div>
 </section>

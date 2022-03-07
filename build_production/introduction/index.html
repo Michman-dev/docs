@@ -160,46 +160,10 @@
     </li>
             <li class="pl-4 li-lvl1">
             
-        <a href="/servers/types"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Server Types
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/git"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Git Access
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
         <a href="/servers/python"
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Python
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/nginx"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Nginx Configuration
-        </a>
-    
-    </li>
-            <li class="pl-4 li-lvl1">
-            
-        <a href="/servers/security"
-            class="lvl1   nav-menu__item hover:text-blue-500"
-        >
-            Security
         </a>
     
     </li>
@@ -253,6 +217,15 @@
             class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Queues
+        </a>
+    
+    </li>
+            <li class="pl-4 li-lvl1">
+            
+        <a href="/projects/nginx"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Nginx Configuration
         </a>
     
     </li>
@@ -328,8 +301,40 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Introducing!<a id="introducing" href="#introducing" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
-<p>_</p>
+            <h1>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="">#</a></h1>
+<ul class="table-of-contents">
+<li>
+<a href="#what-is-michman">What is Michman?</a>
+</li>
+<li>
+<a href="#found-something-wrong">Found something wrong?</a>
+</li>
+</ul>
+<h2>What is Michman?<a id="what-is-michman" href="#what-is-michman" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p><strong>Michman</strong> is a server management and project deployment service tailored for applications built with Django or Python in general.</p>
+<p>After connecting to your preferred server provider, Michman will provision a new servers,
+apply a number of security hardening practices and install:</p>
+<ul>
+<li>Python</li>
+<li>venv</li>
+<li>Gunicorn</li>
+<li>Nginx</li>
+<li>MySQL, PostgreSQL or MariaDB</li>
+<li>Redis or Memcached</li>
+<li>Uncomplicated Firewall (UFW)</li>
+<li>Logrotate</li>
+<li>Automatic Security Updates</li>
+<li>...and more!</li>
+</ul>
+<p>And then Michman will help you with managing daemons, queues, scheduled jobs, SSL certificates.</p>
+<p>After a server is ready Michman will handle deploying and running your Django/Python application in testing, staging or production for you.</p>
+<h2>Found something wrong?<a id="found-something-wrong" href="#found-something-wrong" class="heading-permalink" aria-hidden="true" title="">#</a></h2>
+<p>Michman documentation is <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://github.com/michman-dev/docs" title="Michman Docs GitHub Repo">open-source</a>.</p>
+<p>If you've found something in these docs that is confusing, incorrect or incomplete,
+please consider submitting a pull request on <a rel="noopener noreferrer" target="_blank" class="external-link" href="https://github.com/michman-dev/docs" title="Michman Docs GitHub Repo">GitHub</a>.</p>
+<div class="message message-">
+<p>Or just drop me a note on <a href="mailto:bogdan@michman.dev">bogdan@michman.dev</a>, and I'll sort it out!</p>
+</div>
         </div>
     </div>
 </section>
