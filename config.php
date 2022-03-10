@@ -10,7 +10,7 @@ return [
     'homepage' => 'introduction',
 
     'siteName' => 'Michman Docs',
-    'siteDescription' => 'Python and Django hosting, instant automated deployment and Python servers.',
+    'siteDescription' => 'No-hassle Python and Django instant automated deployment, hosting and Python servers.',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => '',
