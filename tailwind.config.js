@@ -1,4 +1,6 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     content: require('fast-glob').sync([
@@ -57,12 +59,9 @@ module.exports = {
                 }
             },
             fontFamily: {
-                sans: [
-                    'Nunito Sans'
-                ],
-                mono: [
-                    'monospace',
-                ],
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['IBM Plex Serif', ...defaultTheme.fontFamily.serif],
+                mono: ['monospace', ...defaultTheme.fontFamily.mono],
             },
             lineHeight: {
                 normal: '1.6',

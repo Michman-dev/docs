@@ -31,7 +31,12 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        {{-- Fonts --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap">
+
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
@@ -40,14 +45,14 @@
     </head>
 
     <body class="w-screen min-h-screen overflow-x-hidden flex flex-col justify-between bg-navy-100 text-gray-100 leading-normal font-sans antialiased debug-screens">
-        <header class="w-full flex items-center bg-navy-300 h-24 mb-8 py-4" role="banner">
+        <header class="w-full flex items-center bg-navy-300 h-16 md:h-24 mb-8 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center text-gray-300 hover:text-gray-200 active:text-gray-100">
-                        <x-logo class="block h-8 md:h-10 w-auto mr-3" alt="{{ $page->siteName }} logo" />
+                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center text-gold-800 hover:text-gold-700 active:text-gold-600">
+{{--                        <x-logo class="block h-8 md:h-10 w-auto mr-3" alt="{{ $page->siteName }} logo" />--}}
 {{--                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />--}}
 
-                        <span class="my-0 pr-4 text-lg md:text-2xl font-semibold">{{ $page->siteName }}</span>
+                        <span class="text-xl md:text-2xl font-serif font-bold">{{ $page->siteName }}</span>
                     </a>
                 </div>
 
