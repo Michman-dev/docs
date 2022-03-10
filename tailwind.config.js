@@ -61,7 +61,6 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 serif: ['IBM Plex Serif', ...defaultTheme.fontFamily.serif],
-                mono: ['monospace', ...defaultTheme.fontFamily.mono],
             },
             lineHeight: {
                 normal: '1.6',
