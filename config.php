@@ -16,10 +16,12 @@ return [
     'docsearchApiKey' => '',
     'docsearchIndexName' => '',
 
-    // navigation menu
+    // Navigation menu
     'navigation' => require_once('navigation.php'),
 
-    // helpers
+    /*
+     * Helpers
+     */
     'isActive' => function (PageVariable $page, $path): bool
     {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));

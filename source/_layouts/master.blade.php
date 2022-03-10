@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ $page->language ?? 'en' }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="home" href="{{ $page->baseUrl }}">
+        <link rel="icon" href="/favicon.ico">
+
+        <link rel="canonical" href="{{ $page->getUrl() }}">
+
+        <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
         <meta property="og:site_name" content="{{ $page->siteName }}"/>
@@ -16,19 +23,14 @@
         <meta name="twitter:image:alt" content="{{ $page->siteName }}">
         <meta name="twitter:card" content="summary_large_image">
 
-        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+        @if($page->docsearchApiKey && $page->docsearchIndexName)
             <meta name="generator" content="tighten_jigsaw_doc">
         @endif
 
-        <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
-
-        <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="/favicon.ico">
-
         @stack('meta')
 
-        @if ($page->production)
-            <!-- Insert analytics code here -->
+        @if($page->production)
+            {{-- Insert analytics code here --}}
         @endif
 
         {{-- Fonts --}}
@@ -37,11 +39,15 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap">
 
+        {{-- Styles --}}
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
-        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+        @if($page->docsearchApiKey && $page->docsearchIndexName)
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         @endif
+
+        {{-- JavaScript --}}
+        <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
     </head>
 
     <body class="w-screen min-h-screen overflow-x-hidden flex flex-col justify-between bg-navy-100 text-gray-100 leading-normal font-sans antialiased debug-screens">
@@ -60,7 +66,7 @@
                 </div>
 
                 <div class="flex flex-1 justify-end items-center text-right md:pl-10">
-                    @if ($page->docsearchApiKey && $page->docsearchIndexName)
+                    @if($page->docsearchApiKey && $page->docsearchIndexName)
                         @include('_nav.search-input')
                     @endif
                 </div>
@@ -72,8 +78,6 @@
         <main role="main" class="w-full flex-auto">
             @yield('body')
         </main>
-
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @stack('scripts')
 

@@ -36,7 +36,7 @@ class GenerateSitemap
         $sitemap->write();
     }
 
-    public function isExcluded($path)
+    public function isExcluded($path): bool
     {
         return Str::is($this->exclude, $path);
     }
