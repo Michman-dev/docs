@@ -55,12 +55,9 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center text-gold-800 hover:text-gold-700 active:text-gold-600">
-{{--                        <x-logo class="block h-8 md:h-10 w-auto mr-3" alt="{{ $page->siteName }} logo" />--}}
-{{--                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />--}}
-
-                        <span class="text-xl md:text-2xl font-serif font-bold">
+                        <span class="text-xl md:text-2xl font-serif font-bold tracking-tight">
                             Michman
-                            <span class="text-gray-300"> Docs</span>
+                            <span class="text-gray-300 tracking-normal"> Docs</span>
                         </span>
                     </a>
                 </div>
