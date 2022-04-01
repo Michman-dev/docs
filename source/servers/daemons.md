@@ -16,7 +16,7 @@ section: content
 Daemons are long-running scripts and processes you wish to keep alive on your server.
 Michman uses [Supervisor][supervisor] to manage daemons on your servers.
 If the process stops executing, Supervisor will automatically restart the process.
-Supervisor is designed to be easy to use, and you don't have to even read its docs.
+Supervisor is designed to be easy to use, and you don't even have to read its docs.
 
 :::info
 While you can use Daemons feature to manage your Django queues,
