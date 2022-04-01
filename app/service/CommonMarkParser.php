@@ -64,13 +64,11 @@ class CommonMarkParser implements MarkdownParser
 
         $result = $this->converter->convert($markdown);
 
-        $result = strtr($result, [
+        return strtr($result, [
             '<?php' => "<{{'?php'}}",
             '@' => "{{'@'}}",
             '{{' => '@{{',
             '{!!' => '@{!!',
         ]);
-
-        return $result;
     }
 }
