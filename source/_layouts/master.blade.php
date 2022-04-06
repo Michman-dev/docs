@@ -50,7 +50,7 @@
         <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
     </head>
 
-    <body class="w-screen min-h-screen overflow-x-hidden flex flex-col justify-between bg-navy-100 text-gray-100 leading-normal font-sans antialiased debug-screens">
+    <body class="w-screen min-h-screen overflow-x-hidden flex flex-col justify-between bg-navy-100 text-gray-100 leading-normal font-sans antialiased {{ $page->production ? '' : 'debug-screens' }}">
         <header class="w-full flex items-center bg-navy-300 h-16 md:h-24 mb-8 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
