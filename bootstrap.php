@@ -1,8 +1,10 @@
 <?php
 
-use App\Listeners\GenerateSitemap;
 use App\Service\CommonMarkParser;
+use Illuminate\Support\Str;
+use samdark\sitemap\Sitemap;
 use TightenCo\Jigsaw\Jigsaw;
+use TightenCo\Jigsaw\PageVariable;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -22,4 +24,43 @@ $container->singleton('markdownParser', function ($c) {
  * });
  */
 
-$events->afterBuild(GenerateSitemap::class);
+/*
+ * Generate custom sitemap.xml file
+ */
+$events->afterBuild(function (Jigsaw $jigsaw) {
+
+    $baseUrl = $jigsaw->getConfig('baseUrl');
+
+    $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
+
+    $pages = $jigsaw->getPages()
+        ->reject(function (PageVariable $page, string $path) {
+            // Reject pages explicitly removed from sitemap
+            if (($page->sitemap ?? true) === false)
+                return true;
+
+            $exclude = [
+                '/assets/*',
+                '/*.ico',
+                '/*.png',
+                '/*.svg',
+                '/*.xml',
+                '/*.txt',
+                '/404.html',
+                '/site.webmanifest',
+            ];
+
+            return Str::is($exclude, $path);
+        });
+
+    $pages->each(function (PageVariable $page, string $path) use ($baseUrl, $sitemap) {
+        $sitemap->addItem(
+            rtrim($baseUrl, '/') . ($page->sitemap ?? $path),
+            $page->getModifiedTime(),
+            Sitemap::DAILY,
+        );
+    });
+
+    $sitemap->write();
+
+});

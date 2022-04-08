@@ -4,6 +4,7 @@ description: Hidden page with the syntax examples.
 extends: _layouts.documentation
 section: content
 permalink: syntax/index.html
+sitemap: false
 ---
 
 [TOC]
