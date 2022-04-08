@@ -6,7 +6,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="/favicon.ico">
+
+        @include('_partials.favicons')
 
         <link rel="canonical" href="{{ $page->getUrl() }}">
 
