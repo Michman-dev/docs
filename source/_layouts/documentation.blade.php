@@ -7,6 +7,8 @@
 @section('body')
 <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
     <div class="flex flex-col lg:flex-row">
+{{--        TODO: The way this thing is laid out is just f'ed up.
+                  Redo desktop and mobile into two different layouts and use Alpine for triggering the menu instead of that custom JS code.--}}
         <nav id="js-nav-menu" class="nav-menu hidden lg:block">
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
