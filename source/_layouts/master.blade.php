@@ -11,7 +11,7 @@
 
         <link rel="canonical" href="{{ $page->getUrl() }}">
 
-        <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
+        <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
         @include('_partials.socials')
