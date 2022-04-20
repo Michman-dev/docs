@@ -9,6 +9,8 @@
 
         @include('_partials.favicons')
 
+        <link rel="sitemap" type="application/xml" href="https://docs.michman.dev/sitemap.xml">
+
         <link rel="canonical" href="{{ $page->getUrl() }}">
 
         <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
