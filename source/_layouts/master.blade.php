@@ -70,6 +70,7 @@
 
         @stack('scripts')
 
+{{--        TODO: Have something in the footer.--}}
         {{--
         <footer class="bg-navy-300 text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center">
