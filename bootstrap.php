@@ -1,5 +1,6 @@
 <?php
 
+use App\Providers\HelpersServiceProvider;
 use App\Service\CommonMarkParser;
 use Illuminate\Support\Str;
 use samdark\sitemap\Sitemap;
@@ -23,6 +24,9 @@ $container->singleton('markdownParser', function ($c) {
  *     // Your code here
  * });
  */
+
+// Load helper functions.
+$events->beforeBuild(HelpersServiceProvider::class);
 
 /*
  * Generate custom sitemap.xml file
