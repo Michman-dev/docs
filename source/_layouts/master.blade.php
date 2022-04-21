@@ -11,7 +11,7 @@
 
         <link rel="sitemap" type="application/xml" href="https://docs.michman.dev/sitemap.xml">
 
-        <link rel="canonical" href="{{ $page->getUrl() }}">
+        <link rel="canonical" href="{{ slashedUrl($page->getUrl()) }}">
 
         <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
