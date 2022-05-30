@@ -25,7 +25,7 @@ When provisioning a new server you'll choose a Python version that will be insta
 Once the server is created you can install more versions from your server's management page.
 All installed versions will be available to use when creating a new project or switching versions for an existing one.
 
-You can uninstall a version of Python as long as it is not in use by any projects on that server and it isn't the last one installed.
+You can uninstall a version of Python as long as it is not in use by any projects on that server, and it isn't the last one installed.
 
 
 
