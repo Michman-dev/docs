@@ -36,4 +36,4 @@ you'll have to manually copy the public key from your server's **Manage** page a
 
 
 
-[ssh]: https://michman.dev/account/ssh "Michman Account SSH Keys Management Page"
+[ssh]: https://app.michman.dev/account/ssh "Michman Account SSH Keys Management Page"

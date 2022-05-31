@@ -48,4 +48,4 @@ However, your servers will not be deleted from your server providers and no data
 
 
 
-[account-settings]: https://michman.dev/account/profile "Michman Account Settings Page"
+[account-settings]: https://app.michman.dev/account/profile "Michman Account Settings Page"

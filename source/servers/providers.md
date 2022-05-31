@@ -36,5 +36,5 @@ to create a new API token. Copy-paste that token into your Michman Account on [S
 
 
 
-[providers]: https://michman.dev/account/providers "Michman Account Server Providers Page"
+[providers]: https://app.michman.dev/account/providers "Michman Account Server Providers Page"
 [digital-ocean]: https://m.do.co/c/a8ab3ad71294 "DigitalOcean Server Provider"

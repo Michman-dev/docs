@@ -30,4 +30,4 @@ If you need to add specific contact or tax information to your receipts such as 
 
 
 
-[billing]: https://michman.dev/billing "Michman Billing Page"
+[billing]: https://app.michman.dev/billing "Michman Billing Page"

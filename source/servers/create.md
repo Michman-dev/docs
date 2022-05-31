@@ -74,5 +74,5 @@ for your account on your chosen server provider.
 
 
 
-[servers]: https://michman.dev/servers "Michman Server Dashboard"
+[servers]: https://app.michman.dev/servers "Michman Server Dashboard"
 [docs-providers]: /servers/providers "Michman Docs Server Providers"
