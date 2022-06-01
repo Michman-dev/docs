@@ -20,7 +20,7 @@ Supervisor is designed to be easy to use, and you don't even have to read its do
 
 :::info
 While you can use Daemons feature to manage your Django queues,
-Michman has a dedicated feature specifically for that - [Queues][docs-queues].
+Michman has a dedicated feature specifically for that - [Queues.][docs-queues]
 :::
 
 
