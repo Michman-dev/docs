@@ -32,7 +32,7 @@ return [
             'Deployment' => 'projects/deployment',
             'Queues' => 'projects/queues',
             'Nginx Configuration' => 'projects/nginx',
-            'SSL' => 'projects/ssl',
+            'SSL/HTTPS' => 'projects/ssl',
         ],
     ],
 
