@@ -1,53 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
+  <loc>https://docs.michman.dev/projects/basics</loc>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/projects/nginx</loc>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/projects/ssl</loc>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/projects/queues</loc>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://docs.michman.dev/projects/deployment</loc>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
   <loc>https://docs.michman.dev/introduction</loc>
   <lastmod>2022-04-08T13:27:44+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/account/vcs</loc>
-  <lastmod>2022-02-25T12:17:48+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/account/ssh</loc>
-  <lastmod>2022-02-25T12:19:49+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/account/billing</loc>
-  <lastmod>2022-02-25T11:40:47+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/account/your-account</loc>
-  <lastmod>2022-02-25T13:13:54+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/servers/python</loc>
-  <lastmod>2022-03-07T18:16:34+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/servers/providers</loc>
-  <lastmod>2022-03-07T19:49:03+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/servers/create</loc>
-  <lastmod>2022-03-07T19:48:54+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/servers/daemons</loc>
-  <lastmod>2022-03-31T11:26:45+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://docs.michman.dev/servers/databases</loc>
-  <lastmod>2022-03-07T19:10:15+00:00</lastmod>
+  <lastmod>2022-06-08T15:19:59+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
