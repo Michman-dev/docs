@@ -52,4 +52,14 @@ return [
 
         return $page->baseUrl . $page->url($path);
     },
+
+    'image' => function(PageVariable $page, string $path): string
+    {
+        return $page->imagesPath . $path;
+    },
+
+    'imageFullUrl' => function(PageVariable $page, string $path): string
+    {
+        return $page->fullUrl($page->image($path));
+    },
 ];
