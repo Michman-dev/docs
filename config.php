@@ -9,6 +9,8 @@ return [
     'baseUrl' => 'http://localhost:8000',
     'homepage' => 'introduction',
 
+    'imagesPath' => '/assets/images/',
+
     'siteName' => 'Michman Docs',
     'siteDescription' => 'No-hassle Python and Django instant automated deployment, hosting and Python servers.',
 
