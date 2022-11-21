@@ -24,6 +24,11 @@ return [
     /*
      * Helpers
      */
+    'getTitle' => function (PageVariable $page): string
+    {
+        return ($page->title ? $page->title . ' | ' : '') . $page->siteName;
+    },
+    
     'isActive' => function (PageVariable $page, $path): bool
     {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));

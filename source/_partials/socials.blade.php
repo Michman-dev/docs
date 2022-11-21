@@ -4,14 +4,14 @@
 <meta name="twitter:image:alt" content="{{ $page->siteName }}">
 <meta name="twitter:site" content="{{ $page->twitterAccount }}">
 <meta name="twitter:creator" content="{{ $page->twitterAccount }}">
-<meta name="twitter:title" content="{{ $page->title ?? $page->siteName }}">
+<meta name="twitter:title" content="{{ $page->getTitle() }}">
 <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
 {{--<meta name="twitter:label2" value="API">--}}
 {{--<meta name="twitter:data2" value="https://docs.michman.dev/api">--}}
 
 {{-- Generic Social Tags --}}
 <meta property="og:site_name" content="{{ $page->siteName }}">
-<meta property="og:title" content="{{ $page->title ?? $page->siteName }}">
+<meta property="og:title" content="{{ $page->getTitle() }}">
 <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}">
 <meta property="og:url" content="{{ $page->getUrl() }}">
 <meta property="og:image" content="{{ $page->imageFullUrl('twitter-og.png') }}">
