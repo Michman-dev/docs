@@ -65,8 +65,13 @@ return [
         return $page->imagesPath . $path;
     },
 
-    'imageFullUrl' => function(PageVariable $page, string $path): string
+    'imageFullUrl' => function(PageVariable $page, string $path, bool $version = false): string
     {
-        return $page->fullUrl($page->image($path));
+        $url = $page->fullUrl($page->image($path));
+
+        if ($version)
+            $url .= '?id=' . rand(1000000000, getrandmax());
+
+        return $url;
     },
 ];
