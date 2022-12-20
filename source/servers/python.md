@@ -14,7 +14,7 @@ section: content
 ## Overview
 
 Michman can install and configure multiple versions of Pythons on your servers.
-Currently supported major versions are 2.7, 3.7, 3.8, 3.9 and 3.10.
+Currently supported major versions are 2.7, 3.7, 3.8 and 3.9.
 
 
 
