@@ -9,7 +9,7 @@ return [
     'Account' => [
         'children' => [
             'Your Account' => 'account/your-account',
-            'Source Control' => 'account/vcs',
+            'Source Control' => 'account/git',
             'SSH Keys' => 'account/ssh',
             'Billing' => 'account/billing',
         ],

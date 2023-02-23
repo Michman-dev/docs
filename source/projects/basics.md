@@ -42,7 +42,7 @@ You can also have a new database created for your project on this step right awa
 ## Installation
 
 Before you able to install your project you'll need to connect your Michman account to the Git repository with your project.
-[More info][docs-vcs]
+[More info][docs-git]
 
 After connecting to your Git and creating your project go to your project's management page.
 Now you'll need to install your project on the server. To do so you'll need to set:
@@ -65,7 +65,7 @@ into the project's venv on your server.
 The path is relative to the project's root. The default for most Python projects is `requirements.txt`
 
 **Use deploy key** - as an additional safety measure you can have a separate SSH key for deploying this project.
-Make sure to add this key to your VCS account settings before proceeding.
+Make sure to add this key to your Git account settings before proceeding.
 
 Press **Install Repository** to save the configuration of your project and pull the source code onto your servers.
 The project **will not** be deployed and **will not** be running and accessible from the Internet until you perform
@@ -73,5 +73,5 @@ a [deployment.][docs-deployment]
 
 
 
-[docs-vcs]: /account/vcs "Michman Docs Source Control"
+[docs-git]: /account/git "Michman Docs Source Control"
 [docs-deployment]: /projects/deployment "Michman Docs Project Deployment"

@@ -1,11 +1,11 @@
 ---
 title: Source Control
-description: Manage your VCS providers.
+description: Manage your Git providers.
 extends: _layouts.documentation
 section: content
 ---
 
-# Source Control (VCS)
+# Source Control (Git)
 
 [TOC]
 
@@ -13,7 +13,7 @@ section: content
 
 ## Supported Providers
 
-Michman currently supports these VCS providers:
+Michman currently supports these Git providers:
 - [GitHub](https://github.com)
 - [GitLab](https://gitlab.com)
 - [Bitbucket](https://bitbucket.com)
@@ -31,16 +31,16 @@ You can connect to any of the supported source control providers at any time thr
 You may remove a connected source control provider by clicking the Unlink button next to a provider.
 
 :::warning
-If you unlink a VCS account you will not be able to deploy projects from this account. Existing deployment won't be affected.
+If you unlink a Git account you will not be able to deploy projects from this account. Existing deployment won't be affected.
 :::
 
 
 
 ## Refreshing tokens
 
-If you have any issues working with your connected VCS providers -
+If you have any issues working with your connected Git providers -
 try refreshing the access tokens by clicking the **Refresh Token** button on the [Source Control Page][vsc]. 
 
 
 
-[vsc]: https://app.michman.dev/account/vcs "Michman Account VCS Management Page"
+[vsc]: https://app.michman.dev/account/vcs "Michman Account Git Management Page"
